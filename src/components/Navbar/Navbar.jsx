@@ -6,9 +6,10 @@ import { MyInfoText } from "../../common/Text/Text";
 
 const NavbarContainer = styled.div`
     position: fixed;
+    z-index: 1;
     display: flex;
     width: 100%;
-    background-color: black;
+    background-color:rgba(3, 3, 3, 0.4);
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left:10rem;
