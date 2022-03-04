@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import MyInfoMarket from './components/MyInfoMarket/MyInfoMarket';
 import Technology from "./components/Technology/Technology";
-import Service from "./components/MyInfoMarket/MyInfoMarket";
+import Service from "./components/Service/Service";
 import Company from "./components/Company/Company";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";

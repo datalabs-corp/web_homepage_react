@@ -38,7 +38,7 @@ const Navbar = () => {
     return (
         <NavbarContainer>
             <LogoContainer >
-                <img src="/images/company__logo.png" style={{width:"100%", height:"100%"}}/>
+                <img src="/images/company__logo.png" alt="회사 로고" style={{width:"100%", height:"100%"}}/>
             </LogoContainer>
             <UnOrderList>
                 <List>

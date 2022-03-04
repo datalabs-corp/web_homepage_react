@@ -30,7 +30,9 @@ const LogoTitle = styled.div`
 `
 
 const ImageContainer = styled.div`
-    
+    display:flex;
+    align-items:center;
+    justify-content:center;
 `
 
 export const MyInfoMarketDescription = () => {
@@ -44,9 +46,19 @@ export const MyInfoMarketDescription = () => {
                     </LogoTitle>
                     <MyInfoText fontColor={PRIMARY_COLOR} fontSize="1.4rem" >개인 정보를 디지털 자산화 합니다.</MyInfoText>
                 </LogoTitleContainer>
-
                 <ImageContainer >
-                    
+                    <img src="images/my_info_phone.png" alt="폰 사진"/>
+                    <div style={{width:"30rem"}}>
+                        <MyInfoText fontColor={GREY_FONT_COLOR} fontSize="1.2rem">
+                            {`마이인포 마켓은 세계 최초의 블록체인 기반 
+                            개인 데이터 마켓 플랫폼입니다.
+                                마이 인포 운영 및 거래를
+                                개인이 주도적으로 하며 그에 따른 복상이 주어집니다.
+                                블록체인 기술을 활용하여
+                                중앙서버 DB에 저장했던 기존 데이터 시스탬보다
+                                개인 데이터 보호가 강화됩니다.`}
+                        </MyInfoText>
+                    </div>
                 </ImageContainer>
             </DesciptionContainer>
         </DesciptionSection>
