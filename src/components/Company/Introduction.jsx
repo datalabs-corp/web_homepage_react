@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { MyInfoText } from "../../common/Text/Text";
 import { 
@@ -7,17 +7,23 @@ import {
     GREY_FONT_COLOR, 
     WHITE_FONT_COLOR
 } from "../../common/color/color";
+import { Talent } from "./IntroductionItems/Talent";
+import { Ideology } from "./IntroductionItems/Ideology";
+import { Benefits } from "./IntroductionItems/Benefits";
 
 const buttonItems = [
-    {
+    {   
+        id: 0,
         mainTitle: "인재상",
         subTitle: "데이터랩스가 추구하는 인재상",
     },
     {
+        id:1,
         mainTitle: "우리의 이념",
         subTitle: "우리는 이렇게 일합니다",
     },
     {
+        id:2,
         mainTitle: "복리후생",
         subTitle: "데이터랩스의 4가지 약속",
     }
@@ -25,6 +31,10 @@ const buttonItems = [
 
 const IntroSection = styled.section`
     background-color: ${DEEP_BLUE_COLOR};
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 6.2rem;
 `
 
@@ -39,33 +49,97 @@ const IntroButton = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width:16rem;
     padding:2rem;
     cursor: pointer;
+    background-color: ${(props) => {
+            const { id, buttonIndex } = props;
+            if (id === buttonIndex) {
+                return WHITE_FONT_COLOR;
+            }
+        }};
+
+    & p {
+        color: ${(props) => {
+            const { id, buttonIndex } = props;
+            if (id === buttonIndex) {
+                return PRIMARY_COLOR;
+            }
+        }};
+
+        opacity: ${(props) => {
+            const { id, buttonIndex } = props;
+            if (id === buttonIndex) {
+                return 1;
+            }
+        }};
+    }
 `
 
-const Button = ({ mainTitle, subTitle }) => {
+const Button = ({ id, mainTitle, subTitle, handleButton, buttonIndex }) => {
     return (
-        <IntroButton>
-            <MyInfoText fontSize={"2rem"} fontWeight={"bold"} fontColor={PRIMARY_COLOR}>{mainTitle}</MyInfoText>
-            <MyInfoText fontSize={"1rem"} fontColor={PRIMARY_COLOR}>{subTitle}</MyInfoText>
+        <IntroButton id={id} buttonIndex={buttonIndex} onClick={() => {handleButton(id)}}>
+            <MyInfoText 
+                fontSize={"2rem"} 
+                fontWeight={"bold"} 
+                fontColor={WHITE_FONT_COLOR} 
+                styles={{opacity: 0.5}}
+            >{mainTitle}
+            </MyInfoText>
+            <MyInfoText 
+                fontSize={"1rem"} 
+                fontColor={WHITE_FONT_COLOR} 
+                styles={{opacity: 0.5}} 
+            >{subTitle}
+            </MyInfoText>
         </IntroButton>
     )
 }
 
 export const Introduction = () => {
+    const [buttonIndex, setButtonIndex] = useState(0);
+
+    const handleButton = (index) => {
+        setButtonIndex(index);
+    }
+
     return (
         <>
             <IntroSection>
-                <MyInfoText fontColor={WHITE_FONT_COLOR} fontSize={"3rem"} fontWeight={"bold"}>Company</MyInfoText>
-                <MyInfoText fontColor={WHITE_FONT_COLOR} fontSize={"1.4rem"}>데이터랩스를 소개합니다.</MyInfoText>
-                <MyInfoText fontColor={WHITE_FONT_COLOR} fontSize={"3.4rem"} styles={{opacity: 0.5}}>"상상이 현실이 되고 개인이 주체가 되는 회사"</MyInfoText>
+                <MyInfoText 
+                    fontColor={WHITE_FONT_COLOR} 
+                    fontSize={"3rem"} 
+                    fontWeight={"bold"}
+                >Company
+                </MyInfoText>
+                <MyInfoText 
+                    fontColor={WHITE_FONT_COLOR} 
+                    fontSize={"1.4rem"}
+                >데이터랩스를 소개합니다.
+                </MyInfoText>
+                <MyInfoText 
+                    fontColor={WHITE_FONT_COLOR} 
+                    fontSize={"3.4rem"} 
+                    styles={{opacity: 0.5}}
+                >"상상이 현실이 되고 개인이 주체가 되는 회사"
+                </MyInfoText>
             </IntroSection>
             <IntroButtonContainer>
-                    {buttonItems.map((button) => {
-                        const { mainTitle, subTitle } = button;
-                        return <Button mainTitle={mainTitle} subTitle={subTitle} />
-                    })}
+                {buttonItems.map((button, index) => {
+                    const { id, mainTitle, subTitle } = button;
+                    return <Button 
+                                key={index} 
+                                id={id} 
+                                buttonIndex={buttonIndex} 
+                                mainTitle={mainTitle} 
+                                subTitle={subTitle} 
+                                handleButton={handleButton}
+                            />
+                })}
             </IntroButtonContainer>
+            {buttonIndex === 0 && <Talent />}
+            {buttonIndex === 1 && <Ideology />}
+            {buttonIndex === 2 && <Benefits />}
         </>
     )
 }

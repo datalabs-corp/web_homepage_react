@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { PRIMARY_COLOR, GREY_FONT_COLOR, WHITE_FONT_COLOR } from "../../common/color/color";
+import { GREY_FONT_COLOR, WHITE_FONT_COLOR } from "../../common/color/color";
 import { MyInfoText } from "../../common/Text/Text";
 
 const DescriptionContainer = styled.div`
@@ -24,7 +24,6 @@ const Description2 = styled.div`
     align-items:center;
     margin-bottom:10rem;
 `
-
 
 export const Description = () => {
     return (

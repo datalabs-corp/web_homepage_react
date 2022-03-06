@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { MyInfoText } from "../../common/Text/Text";
-import { PRIMARY_COLOR, GREY_FONT_COLOR, WHITE_FONT_COLOR} from "../../common/color/color";
+import { WHITE_FONT_COLOR } from "../../common/color/color";
 
 const BannerContainer = styled.div`
     display: flex;
