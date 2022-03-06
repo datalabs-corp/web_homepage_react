@@ -27,7 +27,7 @@ export const MyInfoMarketVideo = () => {
                     <MyInfoText fontColor={GREY_FONT_COLOR} fontSize="1.4rem">영상 소개</MyInfoText>
                 </div>
                 <ReactPlayer 
-                    url="https://youtu.be/1R3SvPELu20"
+                    url="https://youtu.be/1R3SvPELu20&origin=http://localhost:3000"
                     controls={true}
                     width={858}
                     height={482}
