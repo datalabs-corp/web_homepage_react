@@ -4,7 +4,10 @@
   box-sizing: border-box;
   list-style:none;
   text-decoration: none;
-  /* white-space: pre-wrap; */
+}
+
+p {
+  word-break: keep-all;
 }
 
 body {
