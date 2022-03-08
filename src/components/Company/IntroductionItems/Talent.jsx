@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { MyInfoText } from "../../../common/Text/Text";
+import { GmarketBold, GmarketMedium, NoteSansMedium } from "../../../common/Text/Text";
 import { PRIMARY_COLOR, GREY_FONT_COLOR } from "../../../common/color/color";
 
 const Items = [
@@ -68,10 +68,10 @@ const Item = ({ image, title, subTitle }) => {
                 <ItemImageContainer>
                     <ItemImage src={image} alt="아이템 사진" />
                 </ItemImageContainer>
-                <MyInfoText styles={{width:"10rem"}} fontColor={PRIMARY_COLOR} fontSize={"1.8rem"} fontWeight={"bold"}>{title}</MyInfoText>
+                <GmarketBold styles={{width:"10rem"}} fontColor={PRIMARY_COLOR} fontSize={"1.8rem"} fontWeight={"bold"}>{title}</GmarketBold>
                 <div>
                     {subTitle.map((e, index) => {
-                        return <MyInfoText key={index} fontColor={GREY_FONT_COLOR} fontSize={"1.3rem"}>{e}</MyInfoText>
+                        return <NoteSansMedium key={index} fontColor={GREY_FONT_COLOR} fontSize={"1.3rem"}>{e}</NoteSansMedium>
                     })}
                 </div>
             </TalentItem>
@@ -82,7 +82,7 @@ const Item = ({ image, title, subTitle }) => {
 export const Talent = () => {
     return (
         <TalentSection>
-            <MyInfoText styles={{marginBottom: "3rem"}} fontColor={GREY_FONT_COLOR} fontSize={"2.6rem"} >데이터랩스는 이런 분을 찾고 있습니다.</MyInfoText>
+            <GmarketMedium styles={{marginBottom: "3rem"}} fontColor={GREY_FONT_COLOR} fontSize={"2.6rem"} >데이터랩스는 이런 분을 찾고 있습니다.</GmarketMedium>
             <TalentItemContainer>
                 {Items.map((item, index) => {
                     if (item) {

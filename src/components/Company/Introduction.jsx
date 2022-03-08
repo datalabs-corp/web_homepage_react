@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { MyInfoText } from "../../common/Text/Text";
+import { GmarketBold, NoteSansMedium } from "../../common/Text/Text";
 import { 
     PRIMARY_COLOR, 
     DEEP_BLUE_COLOR, 
@@ -79,19 +79,19 @@ const IntroButton = styled.div`
 const Button = ({ id, mainTitle, subTitle, handleButton, buttonIndex }) => {
     return (
         <IntroButton id={id} buttonIndex={buttonIndex} onClick={() => {handleButton(id)}}>
-            <MyInfoText 
+            <GmarketBold 
                 fontSize={"2rem"} 
                 fontWeight={"bold"} 
                 fontColor={WHITE_FONT_COLOR} 
                 styles={{opacity: 0.5}}
             >{mainTitle}
-            </MyInfoText>
-            <MyInfoText 
+            </GmarketBold>
+            <NoteSansMedium 
                 fontSize={"1rem"} 
                 fontColor={WHITE_FONT_COLOR} 
                 styles={{opacity: 0.5}} 
             >{subTitle}
-            </MyInfoText>
+            </NoteSansMedium>
         </IntroButton>
     )
 }
@@ -106,23 +106,23 @@ export const Introduction = () => {
     return (
         <>
             <IntroSection>
-                <MyInfoText 
+                <GmarketBold 
                     fontColor={WHITE_FONT_COLOR} 
                     fontSize={"3rem"} 
                     fontWeight={"bold"}
                 >Company
-                </MyInfoText>
-                <MyInfoText 
+                </GmarketBold>
+                <NoteSansMedium 
                     fontColor={WHITE_FONT_COLOR} 
                     fontSize={"1.4rem"}
                 >데이터랩스를 소개합니다.
-                </MyInfoText>
-                <MyInfoText 
+                </NoteSansMedium>
+                <GmarketBold 
                     fontColor={WHITE_FONT_COLOR} 
                     fontSize={"3.4rem"} 
                     styles={{opacity: 0.5}}
                 >"상상이 현실이 되고 개인이 주체가 되는 회사"
-                </MyInfoText>
+                </GmarketBold>
             </IntroSection>
             <IntroButtonContainer>
                 {buttonItems.map((button, index) => {

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { WHITE_FONT_COLOR } from "../../common/color/color";
-import { MyInfoText } from "../../common/Text/Text";
+import { NoteSansMedium } from "../../common/Text/Text";
 
 const NavbarContainer = styled.div`
     position: fixed;
@@ -43,22 +43,22 @@ const Navbar = () => {
             <UnOrderList>
                 <List>
                     <Link to="/">
-                        <MyInfoText fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1.25rem">MyInfo Market</MyInfoText>
+                        <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1.25rem">MyInfo Market</NoteSansMedium>
                     </Link>
                 </List>
                     <List>
                         <Link to="/technology">
-                        <MyInfoText fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1.25rem">Technology</MyInfoText>
+                        <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1.25rem">Technology</NoteSansMedium>
                     </Link>
                 </List>
                     <List>
                         <Link to="/service">
-                        <MyInfoText fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1.25rem">Service</MyInfoText>
+                        <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1.25rem">Service</NoteSansMedium>
                     </Link>
                 </List>
                     <List>
                         <Link to="/company">
-                        <MyInfoText fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1.25rem">Company</MyInfoText>
+                        <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1.25rem">Company</NoteSansMedium>
                     </Link>
                 </List>
             </UnOrderList>

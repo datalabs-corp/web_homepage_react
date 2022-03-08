@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "GmarketBold";
+    src: url("/public/font/GmarketSansTTFBold.ttf");
+}
+@font-face {
+    font-family: "GmarketMedium";
+    src: url("/public/font/GmarketSansTTFMedium.ttf");
+}
+@font-face {
+    font-family: "GmarketLight";
+    src: url("/public/font/GmarketSansTTFLight.ttf");
+}
+@font-face {
+    font-family: "NoteSansBold";
+    src: url("/public/font/NotoSansKR-Bold.otf")
+}
+@font-face {
+    font-family: "NoteSansMedium";
+    src: url("/public/font/NotoSansKR-Medium.otf")
+}
+@font-face {
+    font-family: "NoteSansLight";
+    src: url("/public/font/NotoSansKR-Light.otf")
+}

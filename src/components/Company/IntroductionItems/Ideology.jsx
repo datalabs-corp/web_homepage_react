@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components"
-import { MyInfoText } from "../../../common/Text/Text";
+import { GmarketBold, GmarketMedium, NoteSansMedium } from "../../../common/Text/Text";
 import { PRIMARY_COLOR, GREY_FONT_COLOR } from "../../../common/color/color";
 
 const Items = [
@@ -78,10 +78,10 @@ const Item = ({ background, title, subTitle, icon }) => {
                 <ItemImageContainer background={background}>
                     <ItemImage src={icon} alt="아이템 사진" />
                 </ItemImageContainer>
-                <MyInfoText fontColor={PRIMARY_COLOR} fontSize={"1.8rem"} fontWeight={"bold"}>{title}</MyInfoText>
+                <GmarketBold fontColor={PRIMARY_COLOR} fontSize={"1.8rem"} fontWeight={"bold"}>{title}</GmarketBold>
                 <div>
                     {subTitle.map((e, index) => {
-                        return <MyInfoText key={index} fontColor={GREY_FONT_COLOR} fontSize={"1.3rem"}>{e}</MyInfoText>
+                        return <NoteSansMedium key={index} fontColor={GREY_FONT_COLOR} fontSize={"1.3rem"}>{e}</NoteSansMedium>
                     })}
                 </div>
             </IdeoItem>
@@ -92,13 +92,13 @@ const Item = ({ background, title, subTitle, icon }) => {
 export const Ideology = () => {
     return (
         <IdeoSection>
-            <MyInfoText 
+            <GmarketMedium 
                 styles={{marginBottom: "3rem"}} 
                 fontColor={GREY_FONT_COLOR} 
                 fontSize={"2.6rem"} 
             >
                 데이터랩스는 이렇게 일합니다.
-            </MyInfoText>
+            </GmarketMedium>
             <IdeoItemContainer>
                 {Items.map((item, index) => {
                     if (item) {

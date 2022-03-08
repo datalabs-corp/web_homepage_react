@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { MyInfoText } from "../../../common/Text/Text";
+import { GmarketBold, GmarketMedium, NoteSansMedium, GmarketLight } from "../../../common/Text/Text";
 import { PRIMARY_COLOR, GREY_FONT_COLOR } from "../../../common/color/color";
 
 const Items = [
@@ -40,18 +40,24 @@ const BenefitsItemContainer = styled.div`
 
 const BenefitsItem = styled.div`
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
-    height: 20rem;
-    margin:2rem;
-    background-color: pink;
+    justify-content: space-between;
+    height: 15.6rem;
+    width: 15.8rem;
+    margin:1rem;
+    padding:3rem;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    border-top: solid 10px ${PRIMARY_COLOR};
 
     & li {
         list-style: disc;
+        margin:0
     }
 
     & p {
-        text-align: center;
+        /* text-align: center; */
     }
 `
 
@@ -59,22 +65,25 @@ const Item = ({ headNumber, title, subTitle }) => {
     return (
         <>
             <BenefitsItem>
-                <MyInfoText fontColor={PRIMARY_COLOR} fontSize={"1.8rem"} fontWeight={"bold"}>{title}</MyInfoText>
+                <GmarketBold fontColor={PRIMARY_COLOR} fontSize={"2.5rem"} fontWeight={"bold"}>{title}</GmarketBold>
                 <ul>
                     {subTitle.map((e, index) => {
                         return (
                             <li>
-                                <MyInfoText 
+                                <NoteSansMedium 
                                     key={index} 
                                     fontColor={GREY_FONT_COLOR} 
-                                    fontSize={"1.3rem"}
+                                    fontSize={"1rem"}
                                 >
                                     {e}
-                                </MyInfoText>
+                                </NoteSansMedium>
                             </li>
                         )
                     })}
                 </ul>
+                <div style={{position: "absolute", top:-90, left:10}}>
+                    <GmarketLight fontColor={"#E4E6FF"} fontSize={"5rem"} fontWeight={"100"} >{headNumber}</GmarketLight>
+                </div>
             </BenefitsItem>
         </>
     )
@@ -83,13 +92,13 @@ const Item = ({ headNumber, title, subTitle }) => {
 export const Benefits = () => {
     return (
         <BenefitsSection>
-            <MyInfoText 
-                styles={{marginBottom: "3rem"}} 
+            <GmarketMedium 
+                styles={{marginBottom: "6rem"}} 
                 fontColor={GREY_FONT_COLOR} 
                 fontSize={"2.6rem"} 
             >
                 데이터랩스만의 특별한 복리후생
-            </MyInfoText>
+            </GmarketMedium>
             <BenefitsItemContainer>
                 {Items.map((item, index) => {
                     const { headNumber, title, subTitle } = item;

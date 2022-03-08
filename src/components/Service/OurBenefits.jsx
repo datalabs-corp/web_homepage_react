@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { PRIMARY_COLOR, GREY_FONT_COLOR } from "../../common/color/color";
-import { MyInfoText } from "../../common/Text/Text";
+import { GmarketMedium, NoteSansMedium } from "../../common/Text/Text";
 
 const items = [
     {
@@ -79,12 +79,12 @@ const BenefitsItem = ({ image, title, description }) => {
     return (
         <Item>
             <ItemImage src={image} alt="아이템"/>
-                <MyInfoText styles={{marginTop:"1rem",marginBottom: "1rem"}} fontColor={GREY_FONT_COLOR} fontSize={"1.8rem"} >{title}</MyInfoText>
+                <GmarketMedium styles={{marginTop:"1rem",marginBottom: "1rem"}} fontColor={GREY_FONT_COLOR} fontSize={"1.8rem"} >{title}</GmarketMedium>
                 <ul>
                     {description.map((e, index) => {
                         return (
                             <li key={index} style={{listStyle: "disc", margin: "1rem" }}>
-                                <MyInfoText fontColor={GREY_FONT_COLOR} fontSize={"1rem"} >{e}</MyInfoText>
+                                <NoteSansMedium fontColor={GREY_FONT_COLOR} fontSize={"1rem"} >{e}</NoteSansMedium>
                             </li>
                         )
                     })}
@@ -97,7 +97,7 @@ export const OurBenefits = () => {
     return (
         <BenefitsSection>
             <TitleContainer>
-                <MyInfoText fontColor={PRIMARY_COLOR} fontSize={"3rem"} >Our Benefits</MyInfoText>
+                <GmarketMedium fontColor={PRIMARY_COLOR} fontSize={"3rem"} >Our Benefits</GmarketMedium>
             </TitleContainer>
             <ItemsContainer>
                 {items.map((item, index) => {
