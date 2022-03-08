@@ -4,7 +4,6 @@ import { GmarketBold, NoteSansMedium } from "../../common/Text/Text";
 import { 
     PRIMARY_COLOR, 
     DEEP_BLUE_COLOR, 
-    GREY_FONT_COLOR, 
     WHITE_FONT_COLOR
 } from "../../common/color/color";
 import { Talent } from "./IntroductionItems/Talent";
@@ -49,7 +48,7 @@ const IntroButton = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:16rem;
+    width:17rem;
     padding:2rem;
     cursor: pointer;
     background-color: ${(props) => {

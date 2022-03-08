@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { GREY_FONT_COLOR } from "../../common/color/color";
-import { MyInfoText } from "../../common/Text/Text";
+import { NoteSansMedium } from "../../common/Text/Text";
 
 const FooterContainer = styled.section`
     display: flex;
@@ -26,15 +26,15 @@ const Footer = () => {
         <FooterContainer>
             <FooterDescription>
                 <div style={{marginRight: "1.6rem"}}>
-                    <MyInfoText fontColor={GREY_FONT_COLOR} fontSize="1.6rem">Data</MyInfoText>
-                    <MyInfoText fontColor={GREY_FONT_COLOR} fontSize="1.6rem">Labs.</MyInfoText>
+                    <NoteSansMedium fontColor={GREY_FONT_COLOR} fontSize="1.6rem">Data</NoteSansMedium>
+                    <NoteSansMedium fontColor={GREY_FONT_COLOR} fontSize="1.6rem">Labs.</NoteSansMedium>
                 </div>
                 <div>
-                    <MyInfoText fontColor={GREY_FONT_COLOR} fontSize="1.1rem">서울시 강남구 강남대로 패스트파이브 4층 406호</MyInfoText>
-                    <MyInfoText fontColor={GREY_FONT_COLOR} fontSize="1.1rem">문의 : contact@data-labs.co.kr</MyInfoText>
+                    <NoteSansMedium fontColor={GREY_FONT_COLOR} fontSize="1.1rem">서울시 강남구 강남대로 패스트파이브 4층 406호</NoteSansMedium>
+                    <NoteSansMedium fontColor={GREY_FONT_COLOR} fontSize="1.1rem">문의 : contact@data-labs.co.kr</NoteSansMedium>
                 </div>
             </FooterDescription>
-            <MyInfoText fontColor={GREY_FONT_COLOR} fontSize="1.1rem">COPYRIGHT &copy; 2022 DATALABS ALL RIGHT RESERVED</MyInfoText>
+            <NoteSansMedium fontColor={GREY_FONT_COLOR} fontSize="1.1rem">COPYRIGHT &copy; 2022 DATALABS ALL RIGHT RESERVED</NoteSansMedium>
             
         </FooterContainer>
     )
