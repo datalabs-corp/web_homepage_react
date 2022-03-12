@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { PRIMARY_COLOR, GREY_FONT_COLOR } from "../../common/color/color";
-import { GmarketMedium, NoteSansMedium } from "../../common/Text/Text";
+import { GmarketMedium, NoteSansLight } from "../../common/Text/Text";
 
 const items = [
     {
@@ -84,7 +84,7 @@ const BenefitsItem = ({ image, title, description }) => {
                     {description.map((e, index) => {
                         return (
                             <li key={index} style={{listStyle: "disc", margin: "1rem" }}>
-                                <NoteSansMedium fontColor={GREY_FONT_COLOR} fontSize={"1rem"} >{e}</NoteSansMedium>
+                                <NoteSansLight fontColor={GREY_FONT_COLOR} fontSize={"1rem"} >{e}</NoteSansLight>
                             </li>
                         )
                     })}

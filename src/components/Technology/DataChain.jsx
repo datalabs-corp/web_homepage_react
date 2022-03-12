@@ -18,7 +18,7 @@ export const DataChain = () => {
                 <MyInfoText fontColor={PRIMARY_COLOR} fontSize={"3rem"} fontWeight={"bold"} >Data Chain</MyInfoText>
                 <MyInfoText fontColor={GREY_FONT_COLOR} fontSize={"1.4rem"}>데이터체인의 특징</MyInfoText>
             </div>
-            <img src="/images/data_chain_char.png" />
+            <img style={{width:"90%"}} src="/images/data_chain_char.png" alt="이미지"/>
         </DataChainSection>
     )
 }

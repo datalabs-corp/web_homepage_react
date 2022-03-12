@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { GmarketBold, NoteSansMedium } from "../../common/Text/Text";
+import { GmarketBold, NoteSansLight } from "../../common/Text/Text";
 import { WHITE_FONT_COLOR } from "../../common/color/color";
 import { Intro } from "./Intro";
 
@@ -20,11 +20,11 @@ export const Banner = () => {
         <BannerContainer>
             <div>
                 <GmarketBold fontColor={WHITE_FONT_COLOR} fontWeight={"bold"} fontSize={"2.8rem"}>Technology</GmarketBold>
-                <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontSize={"1.2rem"}>차별화 된 블록체인 플랫폼, 데이터체인</NoteSansMedium>
+                <NoteSansLight fontColor={WHITE_FONT_COLOR} fontSize={"1.2rem"}>차별화 된 블록체인 플랫폼, 데이터체인</NoteSansLight>
             </div>
             <div style={{position: "absolute", right: "10rem"}}>
-                <GmarketBold fontColor={WHITE_FONT_COLOR} fontSize={"17.5rem"} styles={{opacity: 0.15}}>Tech</GmarketBold>
-                <GmarketBold fontColor={WHITE_FONT_COLOR} fontSize={"17.5rem"} styles={{opacity: 0.15}}>-nology</GmarketBold>
+                <GmarketBold fontColor={WHITE_FONT_COLOR} fontSize={"17.5vw"} styles={{opacity: 0.15}}>Tech</GmarketBold>
+                <GmarketBold fontColor={WHITE_FONT_COLOR} fontSize={"17.5vw"} styles={{opacity: 0.15}}>-nology</GmarketBold>
             </div>
             <Intro />
         </BannerContainer>

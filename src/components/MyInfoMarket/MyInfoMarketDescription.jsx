@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { PRIMARY_COLOR, GREY_FONT_COLOR } from "../../common/color/color";
-import { GmarketBold, NoteSansMedium } from "../../common/Text/Text";
+import { GmarketBold, NoteSansMedium, NoteSansLight } from "../../common/Text/Text";
 
 const DesciptionSection = styled.section`
     background-color: white;
@@ -22,6 +22,7 @@ const LogoTitleContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom:3rem;
 `
 
 const LogoTitle = styled.div`
@@ -48,16 +49,21 @@ export const MyInfoMarketDescription = () => {
                 </LogoTitleContainer>
                 <ImageContainer >
                     <img src="images/my_info_phone.png" alt="폰 사진"/>
-                    <div style={{width:"30rem"}}>
-                        <NoteSansMedium fontColor={GREY_FONT_COLOR} fontSize="1.2rem">
-                            {`마이인포 마켓은 세계 최초의 블록체인 기반 
-                            개인 데이터 마켓 플랫폼입니다.
+                    <div style={{width:"25rem", marginLeft:"5rem"}}>
+                        <NoteSansLight fontColor={GREY_FONT_COLOR} fontSize="1.2rem">
+                            {`마이인포 마켓은 세계 최초의 블록체인 기반
+                                개인 데이터 마켓 플랫폼입니다.
+                                
                                 마이 인포 운영 및 거래를
                                 개인이 주도적으로 하며 그에 따른 복상이 주어집니다.
                                 블록체인 기술을 활용하여
                                 중앙서버 DB에 저장했던 기존 데이터 시스탬보다
                                 개인 데이터 보호가 강화됩니다.`}
-                        </NoteSansMedium>
+                        </NoteSansLight>
+                        <div style={{marginTop:"2rem"}}>
+                            <img style={{marginRight: "1rem"}} src="/images/google_button.png" alt="" />
+                            <img style={{marginRight: "1rem"}} src="/images/apple_button.png" alt="" />
+                        </div>
                     </div>
                 </ImageContainer>
             </DesciptionContainer>

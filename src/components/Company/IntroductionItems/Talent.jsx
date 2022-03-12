@@ -68,10 +68,10 @@ const Item = ({ image, title, subTitle }) => {
                 <ItemImageContainer>
                     <ItemImage src={image} alt="아이템 사진" />
                 </ItemImageContainer>
-                <GmarketBold styles={{width:"10rem"}} fontColor={PRIMARY_COLOR} fontSize={"1.8rem"} fontWeight={"bold"}>{title}</GmarketBold>
+                <GmarketBold styles={{width:"12rem"}} fontColor={PRIMARY_COLOR} fontSize={"1.8vw"} fontWeight={"bold"}>{title}</GmarketBold>
                 <div>
                     {subTitle.map((e, index) => {
-                        return <NoteSansMedium key={index} fontColor={GREY_FONT_COLOR} fontSize={"1.3rem"}>{e}</NoteSansMedium>
+                        return <NoteSansMedium key={index} fontColor={GREY_FONT_COLOR} fontSize={"1.3vw"}>{e}</NoteSansMedium>
                     })}
                 </div>
             </TalentItem>
@@ -91,7 +91,7 @@ export const Talent = () => {
                     } else {
                         return (
                             <div key={index} style={{display:"flex", alignItems:"center"}}>
-                                <img style={{width:"2.3rem", height:"2.3rem"}} src="/images/plus.png"/>
+                                <img style={{width:"2.3rem", height:"2.3rem"}} src="/images/plus.png" alt="이미지"/>
                             </div>
                         )
                     }

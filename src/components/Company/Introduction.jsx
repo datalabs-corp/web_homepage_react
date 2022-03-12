@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { GmarketBold, NoteSansMedium } from "../../common/Text/Text";
+import { GmarketBold, NoteSansLight } from "../../common/Text/Text";
 import { 
     PRIMARY_COLOR, 
     DEEP_BLUE_COLOR, 
@@ -85,12 +85,12 @@ const Button = ({ id, mainTitle, subTitle, handleButton, buttonIndex }) => {
                 styles={{opacity: 0.5}}
             >{mainTitle}
             </GmarketBold>
-            <NoteSansMedium 
+            <NoteSansLight 
                 fontSize={"1rem"} 
                 fontColor={WHITE_FONT_COLOR} 
                 styles={{opacity: 0.5}} 
             >{subTitle}
-            </NoteSansMedium>
+            </NoteSansLight>
         </IntroButton>
     )
 }
@@ -111,16 +111,22 @@ export const Introduction = () => {
                     fontWeight={"bold"}
                 >Company
                 </GmarketBold>
-                <NoteSansMedium 
+                <NoteSansLight 
                     fontColor={WHITE_FONT_COLOR} 
                     fontSize={"1.4rem"}
                 >데이터랩스를 소개합니다.
-                </NoteSansMedium>
+                </NoteSansLight>
                 <GmarketBold 
                     fontColor={WHITE_FONT_COLOR} 
-                    fontSize={"3.4rem"} 
+                    fontSize={"3rem"} 
+                    styles={{opacity: 0.5, marginTop:"2rem"}}
+                >"상상이 현실이 되고
+                </GmarketBold>
+                <GmarketBold 
+                    fontColor={WHITE_FONT_COLOR} 
+                    fontSize={"3rem"} 
                     styles={{opacity: 0.5}}
-                >"상상이 현실이 되고 개인이 주체가 되는 회사"
+                >개인이 주체가 되는 회사"
                 </GmarketBold>
             </IntroSection>
             <IntroButtonContainer>
