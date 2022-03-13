@@ -46,19 +46,24 @@ const Navbar = () => {
                         <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1.25rem">MyInfo Market</NoteSansMedium>
                     </Link>
                 </List>
-                    <List>
-                        <Link to="/technology">
+                <List>
+                    <Link to="/technology">
                         <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1.25rem">Technology</NoteSansMedium>
                     </Link>
                 </List>
-                    <List>
-                        <Link to="/service">
+                <List>
+                    <Link to="/service">
                         <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1.25rem">Service</NoteSansMedium>
                     </Link>
                 </List>
-                    <List>
-                        <Link to="/company">
+                <List>
+                    <Link to="/company">
                         <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1.25rem">Company</NoteSansMedium>
+                    </Link>
+                </List>
+                <List>
+                    <Link to="/recruit">
+                        <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1.25rem">Recruit</NoteSansMedium>
                     </Link>
                 </List>
             </UnOrderList>

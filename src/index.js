@@ -12,6 +12,7 @@ import Service from "./components/Service/Service";
 import Company from "./components/Company/Company";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
+import Recruit from "./components/Recruit/Recruit";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -21,6 +22,7 @@ ReactDOM.render(
       <Route path="/technology" element={<Technology />} />
       <Route path="/service" element={<Service />} />
       <Route path="/company" element={<Company />} />
+      <Route path="/recruit" element={<Recruit />} />
     </Routes>
     <Footer />
   </BrowserRouter>,
