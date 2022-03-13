@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { PRIMARY_COLOR, GREY_FONT_COLOR } from "../../common/color/color"
 import { NoteSansMedium, GmarketBold } from "../../common/Text/Text";
-import ReactPlayer from "react-player/youtube";
+import Youtube from "react-youtube";
 
 
 const VideoSection = styled.section`
@@ -26,9 +26,8 @@ export const MyInfoMarketVideo = () => {
                     <GmarketBold fontColor={PRIMARY_COLOR} fontWeight="bold" fontSize="2.5rem">영상으로 만나보세요</GmarketBold>
                     <NoteSansMedium fontColor={GREY_FONT_COLOR} fontSize="1.4rem">영상 소개</NoteSansMedium>
                 </div>
-                <ReactPlayer 
-                    url="https://youtu.be/WxDCunYnkrU&origin=http://localhost:3000"
-                    controls={true}
+                <Youtube
+                    videoId="WxDCunYnkrU"
                     width={858}
                     height={482}
                 />
