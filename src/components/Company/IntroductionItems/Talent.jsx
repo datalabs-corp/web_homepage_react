@@ -28,7 +28,7 @@ const TalentSection = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5rem;
+    padding: 5vw;
 `
 
 const TalentItemContainer = styled.div`
@@ -40,8 +40,9 @@ const TalentItem = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 20rem;
-    margin:2rem;
+    /* width: vw;/ */
+    height: 30vh;
+    margin:2vw;
 
     & p {
         text-align: center;
@@ -49,10 +50,10 @@ const TalentItem = styled.div`
 `
 
 const ItemImageContainer = styled.div`
-    width: 10rem;
-    height: 10rem;
+    width: 8vw;
+    height: 8vw;
     background-color: ${PRIMARY_COLOR};
-    padding: 3rem;
+    padding: 2vw;
     border-radius: 50%;
 `
 
@@ -68,7 +69,7 @@ const Item = ({ image, title, subTitle }) => {
                 <ItemImageContainer>
                     <ItemImage src={image} alt="아이템 사진" />
                 </ItemImageContainer>
-                <GmarketBold styles={{width:"12rem"}} fontColor={PRIMARY_COLOR} fontSize={"1.8vw"} fontWeight={"bold"}>{title}</GmarketBold>
+                <GmarketBold styles={{width:"12vw"}} fontColor={PRIMARY_COLOR} fontSize={"1.8vw"} fontWeight={"bold"}>{title}</GmarketBold>
                 <div>
                     {subTitle.map((e, index) => {
                         return <NoteSansMedium key={index} fontColor={GREY_FONT_COLOR} fontSize={"1.3vw"}>{e}</NoteSansMedium>
@@ -82,7 +83,7 @@ const Item = ({ image, title, subTitle }) => {
 export const Talent = () => {
     return (
         <TalentSection>
-            <GmarketMedium styles={{marginBottom: "3rem"}} fontColor={GREY_FONT_COLOR} fontSize={"2.6rem"} >데이터랩스는 이런 분을 찾고 있습니다.</GmarketMedium>
+            <GmarketMedium styles={{marginBottom: "3vw"}} fontColor={GREY_FONT_COLOR} fontSize={"2.6vw"} >데이터랩스는 이런 분을 찾고 있습니다.</GmarketMedium>
             <TalentItemContainer>
                 {Items.map((item, index) => {
                     if (item) {
@@ -91,7 +92,7 @@ export const Talent = () => {
                     } else {
                         return (
                             <div key={index} style={{display:"flex", alignItems:"center"}}>
-                                <img style={{width:"2.3rem", height:"2.3rem"}} src="/images/plus.png" alt="이미지"/>
+                                <img style={{width:"2.3vw", height:"2.3vw"}} src="/images/plus.png" alt="이미지"/>
                             </div>
                         )
                     }

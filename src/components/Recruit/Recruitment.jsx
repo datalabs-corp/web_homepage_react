@@ -62,7 +62,7 @@ const data = {
 }
 
 const RecruitmentSection = styled.section`
-    padding: 10rem;
+    padding: 10vw;
     background-color: #F5F5F5;
 `
 
@@ -72,7 +72,7 @@ const ButtonStyle = styled.div`
     justify-content: center;
     align-items: center;
     border: 1px solid #112761;
-    padding: 1.5rem 0rem 1.5rem 0rem;
+    padding: 1.5vw 0vw 1.5vw 0vw;
     cursor: pointer;
 
     background-color: ${(props) => {
@@ -89,10 +89,10 @@ const ButtonStyle = styled.div`
 `
 
 const UnOrderListStyle = styled.ul`
-    margin-bottom: 2rem;
+    margin-bottom: 2vw;
     & li {
         list-style: disc;
-        margin-left: 1rem;
+        margin-left: 1vw;
     }
 
     & li::before {
@@ -100,11 +100,11 @@ const UnOrderListStyle = styled.ul`
     }
 `
 const ItemTitle = styled.div`
-    margin: 3rem 0rem 1rem 0;
+    margin: 3vw 0vw 1vw 0;
 `
 
 const SubTitle = styled.div`
-    margin-top: 2rem;
+    margin-top: 2vw;
 `
 
 const DevAndPlanner = ({ job }) => {
@@ -112,13 +112,13 @@ const DevAndPlanner = ({ job }) => {
     return (
         <div>
             <ItemTitle>
-                <NoteSansBold fontColor={PRIMARY_COLOR} fontSize={"1.5rem"}>주요 업무</NoteSansBold>
+                <NoteSansBold fontColor={PRIMARY_COLOR} fontSize={"1.5vw"}>주요 업무</NoteSansBold>
             </ItemTitle>
             <UnOrderListStyle>
                 {mainTask.map((list, index) => {
                     return(
                         <li key={index}>
-                            <NoteSansLight fontColor={DEEP_BLUE_COLOR}>
+                            <NoteSansLight fontColor={DEEP_BLUE_COLOR} fontSize={"1vw"}>
                                 {list}
                             </NoteSansLight>
                         </li>
@@ -126,16 +126,16 @@ const DevAndPlanner = ({ job }) => {
                 })}
             </UnOrderListStyle>
             <ItemTitle>
-                <NoteSansBold fontColor={PRIMARY_COLOR} fontSize={"1.5rem"}>채용 상세</NoteSansBold>
+                <NoteSansBold fontColor={PRIMARY_COLOR} fontSize={"1.5vw"}>채용 상세</NoteSansBold>
             </ItemTitle>
             <UnOrderListStyle>
                 {description.basic.backEnd ?
                     <div>
                         <SubTitle>
-                            <NoteSansBold fontColor={DEEP_BLUE_COLOR}>
+                            <NoteSansBold fontColor={DEEP_BLUE_COLOR} fontSize={"1vw"}>
                                 [기본사항]
                             </NoteSansBold>
-                            <NoteSansBold fontColor={DEEP_BLUE_COLOR}>
+                            <NoteSansBold fontColor={DEEP_BLUE_COLOR} fontSize={"1vw"}>
                                 - Front-End Developer
                             </NoteSansBold>
                         </SubTitle>
@@ -143,7 +143,7 @@ const DevAndPlanner = ({ job }) => {
                             description.basic.frontEnd.map((list,index) => {
                                 return (
                                     <li key={index}>
-                                        <NoteSansLight fontColor={DEEP_BLUE_COLOR}>
+                                        <NoteSansLight fontColor={DEEP_BLUE_COLOR} fontSize={"1vw"}>
                                             {list}
                                         </NoteSansLight>
                                     </li>
@@ -151,7 +151,7 @@ const DevAndPlanner = ({ job }) => {
                             })
                         }
                         <SubTitle>
-                            <NoteSansBold fontColor={DEEP_BLUE_COLOR}>
+                            <NoteSansBold fontColor={DEEP_BLUE_COLOR} fontSize={"1vw"}>
                                 - Back-End Developer
                             </NoteSansBold>
                         </SubTitle>
@@ -159,7 +159,7 @@ const DevAndPlanner = ({ job }) => {
                             description.basic.backEnd.map((list,index) => {
                                 return (
                                     <li key={index}>
-                                        <NoteSansLight fontColor={DEEP_BLUE_COLOR}>
+                                        <NoteSansLight fontColor={DEEP_BLUE_COLOR} fontSize={"1vw"}>
                                             {list}
                                         </NoteSansLight>
                                     </li>
@@ -167,7 +167,7 @@ const DevAndPlanner = ({ job }) => {
                             })
                         }
                         <SubTitle>
-                            <NoteSansBold fontColor={DEEP_BLUE_COLOR}>
+                            <NoteSansBold fontColor={DEEP_BLUE_COLOR} fontSize={"1vw"}>
                                 [우대 사항]
                             </NoteSansBold>
                         </SubTitle>
@@ -175,7 +175,7 @@ const DevAndPlanner = ({ job }) => {
                             description.common.map((list,index) => {
                                 return (
                                     <li key={index}>
-                                        <NoteSansLight fontColor={DEEP_BLUE_COLOR}>
+                                        <NoteSansLight fontColor={DEEP_BLUE_COLOR} fontSize={"1vw"}>
                                             {list}
                                         </NoteSansLight>
                                     </li>
@@ -186,7 +186,7 @@ const DevAndPlanner = ({ job }) => {
                     :
                     <div>
                         <SubTitle>
-                            <NoteSansBold fontColor={DEEP_BLUE_COLOR}>
+                            <NoteSansBold fontColor={DEEP_BLUE_COLOR} fontSize={"1vw"}>
                                 [기본사항]
                             </NoteSansBold>
                         </SubTitle>
@@ -194,7 +194,7 @@ const DevAndPlanner = ({ job }) => {
                             description.basic.map((list,index) => {
                                 return (
                                     <li key={index}>
-                                        <NoteSansLight fontColor={DEEP_BLUE_COLOR}>
+                                        <NoteSansLight fontColor={DEEP_BLUE_COLOR} fontSize={"1vw"}>
                                             {list}
                                         </NoteSansLight>
                                     </li>
@@ -233,21 +233,21 @@ export const Recruitment = () => {
 
     return (
         <RecruitmentSection>
-            <div style={{display: "flex", justifyContent:"center", alignItems:"center", width:"100%",marginBottom: "4rem"}}>
-                <GmarketBold fontColor={PRIMARY_COLOR} fontSize={"2.5rem"}>모집 분야</GmarketBold>
+            <div style={{display: "flex", justifyContent:"center", alignItems:"center", width:"100%",marginBottom: "4vw"}}>
+                <GmarketBold fontColor={PRIMARY_COLOR} fontSize={"2.5vw"}>모집 분야</GmarketBold>
             </div>
             <div style={{display: "flex", justifyContent:"center", alignItems:"center", width:"100%"}}>
                 <ButtonStyle onClick={() => handleFlag(0)} flag={jobFlag} target={0}>
-                    <GmarketMedium fontSize={"1.2rem"} fontColor={DEEP_BLUE_COLOR} >IT 개발자</GmarketMedium>
+                    <GmarketMedium fontSize={"1.2vw"} fontColor={DEEP_BLUE_COLOR} >IT 개발자</GmarketMedium>
                 </ButtonStyle>
                 <ButtonStyle onClick={() => handleFlag(1)} flag={jobFlag} target={1}>
-                    <GmarketMedium fontSize={"1.2rem"} fontColor={DEEP_BLUE_COLOR} >사업기획</GmarketMedium>
+                    <GmarketMedium fontSize={"1.2vw"} fontColor={DEEP_BLUE_COLOR} >사업기획</GmarketMedium>
                 </ButtonStyle>
             </div>
             <div>
                 <NoteSansLight fontColor={DEEP_BLUE_COLOR} fontSize={"1.2vw"}>
                     {`
-                        블록체인을 활용하여 마이데이터의 새로운 지평을 열고 있는 데이터랩스의 서비스를 이끌어 나가실 기획자를 모집합니다.
+                        블록체인을 활용하여 마이데이터의 새로운 지평을 열고 있는 데이터랩스의 서비스를 이끌어 나가실 기획자와 IT 개발자를 모집합니다.
                         금융, 보험 등 국내 여러 협력사들과 협업하여 블록체인을 활용한 다양한 활동으로 새로운 가치 창출에 힘쓸 수 있습니다.
                     `}
                 </NoteSansLight>
@@ -256,36 +256,36 @@ export const Recruitment = () => {
                 {jobFlag ? <DevAndPlanner job={data.planner}/> : <DevAndPlanner job={data.developer}/>}
                 <div>
                     <ItemTitle>
-                        <NoteSansBold fontColor={PRIMARY_COLOR} fontSize={"1.5rem"}>근무 환경</NoteSansBold>
+                        <NoteSansBold fontColor={PRIMARY_COLOR} fontSize={"1.5vw"}>근무 환경</NoteSansBold>
                     </ItemTitle>
                     <UnOrderListStyle>
                         <li>
-                            <NoteSansLight fontColor={DEEP_BLUE_COLOR}>
+                            <NoteSansLight fontColor={DEEP_BLUE_COLOR} fontSize={"1vw"}>
                                 주 4일 근무
                             </NoteSansLight>
                         </li>
                         <li>
-                            <NoteSansLight fontColor={DEEP_BLUE_COLOR}>
+                            <NoteSansLight fontColor={DEEP_BLUE_COLOR} fontSize={"1vw"}>
                                 거주지에 따라 유연한 사무실 근무 (신논현 & 공덕)
                             </NoteSansLight>
                         </li>
                         <li>
-                            <NoteSansLight fontColor={DEEP_BLUE_COLOR}>
+                            <NoteSansLight fontColor={DEEP_BLUE_COLOR} fontSize={"1vw"}>
                                 최신 노트북 업무 장비 지원
                             </NoteSansLight>
                         </li>
                         <li>
-                            <NoteSansLight fontColor={DEEP_BLUE_COLOR}>
+                            <NoteSansLight fontColor={DEEP_BLUE_COLOR} fontSize={"1vw"}>
                                 점심 식대 제공
                             </NoteSansLight>
                         </li>
                         <li>
-                            <NoteSansLight fontColor={DEEP_BLUE_COLOR}>
+                            <NoteSansLight fontColor={DEEP_BLUE_COLOR} fontSize={"1vw"}>
                                 수시 연봉 협상 체계
                             </NoteSansLight>
                         </li>
                         <li>
-                            <NoteSansLight fontColor={DEEP_BLUE_COLOR}>
+                            <NoteSansLight fontColor={DEEP_BLUE_COLOR} fontSize={"1vw"}>
                                 연 1회 1주일 연속 휴가
                             </NoteSansLight>
                         </li>
@@ -293,32 +293,32 @@ export const Recruitment = () => {
                 </div>
                 <div>
                     <ItemTitle>
-                        <NoteSansBold fontColor={PRIMARY_COLOR} fontSize={"1.5rem"}>사무실</NoteSansBold>
+                        <NoteSansBold fontColor={PRIMARY_COLOR} fontSize={"1.5vw"}>사무실</NoteSansBold>
                     </ItemTitle>
                     <UnOrderListStyle>
                         <li>
                             <div style={{display: "flex"}}>
-                                <NoteSansBold styles={{marginRight:"1rem"}} fontColor={DEEP_BLUE_COLOR}>
+                                <NoteSansBold styles={{marginRight:"1vw"}} fontColor={DEEP_BLUE_COLOR} fontSize={"1vw"}>
                                     신논현
                                 </NoteSansBold>
-                                <NoteSansLight fontColor={DEEP_BLUE_COLOR}>
+                                <NoteSansLight fontColor={DEEP_BLUE_COLOR} fontSize={"1vw"}>
                                     서울 강남구 강남대로 464 패스트파이브 4층 406호
                                 </NoteSansLight>
                             </div>
-                            <div style={{margin: "1rem"}}>
+                            <div style={{margin: "1vw"}}>
                                 <img src="/images/company1.png" alt="지도"/>
                             </div>
                         </li>
                         <li>
                             <div style={{display: "flex"}}>
-                                <NoteSansBold styles={{marginRight:"1rem"}} fontColor={DEEP_BLUE_COLOR}>
+                                <NoteSansBold styles={{marginRight:"1vw"}} fontColor={DEEP_BLUE_COLOR} fontSize={"1vw"} >
                                     공덕
                                 </NoteSansBold>
-                                <NoteSansLight fontColor={DEEP_BLUE_COLOR}>
+                                <NoteSansLight fontColor={DEEP_BLUE_COLOR} fontSize={"1vw"}>
                                     서울 마포구 마포대로 92 (도화동, 효성해링턴스퀘어) A동 7층
                                 </NoteSansLight>
                             </div>
-                            <div style={{margin: "1rem"}}>
+                            <div style={{margin: "1vw"}}>
                                 <img src="/images/company1.png" alt="지도"/>
                             </div>
                         </li>
@@ -326,15 +326,15 @@ export const Recruitment = () => {
                 </div>
                 <div>
                     <ItemTitle>
-                        <NoteSansBold fontColor={PRIMARY_COLOR} fontSize={"1.5rem"}>채용 일정</NoteSansBold>
+                        <NoteSansBold fontColor={PRIMARY_COLOR} fontSize={"1.5vw"}>채용 일정</NoteSansBold>
                     </ItemTitle>
-                    <NoteSansLight fontColor={DEEP_BLUE_COLOR}>데이터랩스의 채용은 상시로 진행됩니다. 입사지원을 해주시면 상시로 확인하여 개별연락 드리겠습니다.</NoteSansLight>
+                    <NoteSansLight fontColor={DEEP_BLUE_COLOR} fontSize={"1vw"} >데이터랩스의 채용은 상시로 진행됩니다. 입사지원을 해주시면 상시로 확인하여 개별연락 드리겠습니다.</NoteSansLight>
                 </div>
                 <div>
                     <ItemTitle>
-                        <NoteSansBold fontColor={PRIMARY_COLOR} fontSize={"1.5rem"}>입사지원 방법</NoteSansBold>
+                        <NoteSansBold fontColor={PRIMARY_COLOR} fontSize={"1.5vw"}>입사지원 방법</NoteSansBold>
                     </ItemTitle>
-                    <NoteSansLight fontColor={DEEP_BLUE_COLOR}>이메일 (contact@data-labs.co.kr) 로 자유양식의 이력서를 보내주시면 빠르게 회신드리겠습니다.</NoteSansLight>
+                    <NoteSansLight fontColor={DEEP_BLUE_COLOR} fontSize={"1vw"} >이메일 (contact@data-labs.co.kr) 로 자유양식의 이력서를 보내주시면 빠르게 회신드리겠습니다.</NoteSansLight>
                 </div>
             </div>
         </RecruitmentSection>

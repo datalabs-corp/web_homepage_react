@@ -47,7 +47,7 @@ const items = [
 
 const WhyContainer = styled.section`
     position: relative;
-    margin-top: 40rem;
+    margin-top: 40vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,19 +73,18 @@ const arrowStyles = {
 const WhyItemContainer = styled.img`
     position:absolute;
     width:40%;
-    /* height: 25rem; */
-    top:-4rem;
-    left:15rem;
+    top:-4vw;
+    left:15vw;
 `
 
 const WhyItem = ({ item }) => {
     return (
-        <div style={{position:"relative",padding: "10rem", height:'25rem',width:"100%", display:"flex", justifyItems:"center", alignItems:"center"}}>
+        <div style={{position:"relative", padding: "10rem", height:'25vw', width:"100%", display:"flex", justifyItems:"center", alignItems:"center"}}>
             <WhyItemContainer src={items[item].image} alt="아이템 사진" />
                 <div style={{display:"flex", flex: 1.7}}>
                 </div>
                 <div style={{display:"flex", flex: 1}}>
-                    <NoteSansLight fontColor={GREY_FONT_COLOR} fontSize={"1rem"} >{items[item].text}</NoteSansLight>
+                    <NoteSansLight fontColor={GREY_FONT_COLOR} fontSize={"1vw"} >{items[item].text}</NoteSansLight>
                 </div>
         </div>
     )
@@ -98,17 +97,17 @@ export const WhyBlockchain = () => {
 
     return (
         <WhyContainer>
-            <div style={{textAlign:"center", margin: "2rem"}}>
-                <GmarketBold fontColor={PRIMARY_COLOR} fontWeight={"bold"} fontSize={"3rem"} >Why</GmarketBold>
-                <GmarketBold fontColor={PRIMARY_COLOR} fontWeight={"bold"} fontSize={"3rem"} >Block chain</GmarketBold>
-                <NoteSansMedium fontColor={GREY_FONT_COLOR} fontSize={"1rem"} >데이터랩스가 블록체인을 지향하는 이유</NoteSansMedium>
+            <div style={{textAlign:"center", margin: "2vw"}}>
+                <GmarketBold fontColor={PRIMARY_COLOR} fontWeight={"bold"} fontSize={"3vw"} >Why</GmarketBold>
+                <GmarketBold fontColor={PRIMARY_COLOR} fontWeight={"bold"} fontSize={"3vw"} >Block chain</GmarketBold>
+                <NoteSansMedium fontColor={GREY_FONT_COLOR} fontSize={"1vw"} >데이터랩스가 블록체인을 지향하는 이유</NoteSansMedium>
             </div>
             <SlideImageContainer>
                 <div style={{display: "flex"}}>
                     <div style={{display: "flex", justifyContent:"center", alignItems:"center", flex: 1, backgroundColor:DEEP_BLUE_COLOR} }>
                         <div>
-                            <GmarketLight styles={{opacity: 0.5}} fontColor={WHITE_FONT_COLOR} fontSize={"6rem"}>{`0${items[item].id}`}</GmarketLight>
-                            <GmarketMedium fontColor={WHITE_FONT_COLOR} fontSize={"2.5rem"} >{items[item].title}</GmarketMedium>
+                            <GmarketLight styles={{opacity: 0.5}} fontColor={WHITE_FONT_COLOR} fontSize={"6vw"}>{`0${items[item].id}`}</GmarketLight>
+                            <GmarketMedium fontColor={WHITE_FONT_COLOR} fontSize={"2.5vw"} >{items[item].title}</GmarketMedium>
                         </div>
                     </div>
                     <div style={{flex: 1, height: "100%"}}>
@@ -128,6 +127,7 @@ export const WhyBlockchain = () => {
                                     style={{
                                         ...arrowStyles,
                                         left: "8rem",
+                                        width: "1vw",
                                     }} ><img src="/images/blue_left_arrow.png" alt="왼쪽 화살표"/></div>)
                             }}
                             renderArrowNext={(onClickHandler, hasNext, label) => {
@@ -137,6 +137,7 @@ export const WhyBlockchain = () => {
                                     style={{
                                         ...arrowStyles,
                                         right: "8rem",
+                                        width: "1vw",
                                     }} ><img src="/images/blue_right_arrow.png" alt="오른쪽 화살표"/></div>)
                                 }}
                                 onChange={(index)=>{ setItem(index)}}

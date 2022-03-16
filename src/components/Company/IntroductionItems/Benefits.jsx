@@ -44,10 +44,10 @@ const BenefitsItem = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 15.6rem;
-    width: 15.8rem;
-    margin:1rem;
-    padding:3rem;
+    height: 15.6vw;
+    width: 15.8vw;
+    margin: 1vw;
+    padding: 3vw;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
     border-top: solid 10px ${PRIMARY_COLOR};
 
@@ -65,7 +65,7 @@ const Item = ({ headNumber, title, subTitle }) => {
     return (
         <>
             <BenefitsItem>
-                <GmarketBold fontColor={PRIMARY_COLOR} fontSize={"2.5rem"} fontWeight={"bold"}>{title}</GmarketBold>
+                <GmarketBold fontColor={PRIMARY_COLOR} fontSize={"2.5vw"} fontWeight={"bold"}>{title}</GmarketBold>
                 <ul>
                     {subTitle.map((e, index) => {
                         return (
@@ -73,7 +73,7 @@ const Item = ({ headNumber, title, subTitle }) => {
                                 <NoteSansMedium 
                                     key={index} 
                                     fontColor={GREY_FONT_COLOR} 
-                                    fontSize={"1rem"}
+                                    fontSize={"1vw"}
                                 >
                                     {e}
                                 </NoteSansMedium>
@@ -81,7 +81,7 @@ const Item = ({ headNumber, title, subTitle }) => {
                         )
                     })}
                 </ul>
-                <div style={{position: "absolute", top:-90, left:10}}>
+                <div style={{position: "absolute", top: -90, left:10}}>
                     <GmarketLight fontColor={"#E4E6FF"} fontSize={"5rem"} fontWeight={"100"} >{headNumber}</GmarketLight>
                 </div>
             </BenefitsItem>
@@ -93,9 +93,9 @@ export const Benefits = () => {
     return (
         <BenefitsSection>
             <GmarketMedium 
-                styles={{marginBottom: "6rem"}} 
+                styles={{marginBottom: "6vw"}} 
                 fontColor={GREY_FONT_COLOR} 
-                fontSize={"2.6rem"} 
+                fontSize={"2.6vw"} 
             >
                 데이터랩스만의 특별한 복리후생
             </GmarketMedium>

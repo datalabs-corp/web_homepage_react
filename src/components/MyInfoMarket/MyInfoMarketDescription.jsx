@@ -42,15 +42,15 @@ export const MyInfoMarketDescription = () => {
             <DesciptionContainer>
                 <LogoTitleContainer>
                     <LogoTitle>
-                        <img style={{marginRight:"0.5rem",marginBottom:"0.5rem", marginTop:"0.5rem"}} src="images/app_logo.png" alt="app logo" />
-                        <GmarketBold fontWeight="bold" fontColor={PRIMARY_COLOR} fontSize="2.5rem">마이 인포 마켓</GmarketBold>
+                        <img style={{marginRight:"0.5rem",marginBottom:"0.5rem", marginTop:"0.5rem", width: "3vw",height: "3vw"}} src="images/app_logo.png" alt="app logo" />
+                        <GmarketBold fontWeight="bold" fontColor={PRIMARY_COLOR} fontSize="2.5vw">마이 인포 마켓</GmarketBold>
                     </LogoTitle>
-                    <NoteSansMedium fontColor={PRIMARY_COLOR} fontSize="1.4rem" >개인 정보를 디지털 자산화 합니다.</NoteSansMedium>
+                    <NoteSansMedium fontColor={PRIMARY_COLOR} fontSize="1.4vw" >개인 정보를 디지털 자산화 합니다.</NoteSansMedium>
                 </LogoTitleContainer>
                 <ImageContainer >
-                    <img src="images/my_info_phone.png" alt="폰 사진"/>
-                    <div style={{width:"25rem", marginLeft:"5rem"}}>
-                        <NoteSansLight fontColor={GREY_FONT_COLOR} fontSize="1.2rem">
+                    <img style={{width: "20vw"}} src="images/my_info_phone.png" alt="폰 사진"/>
+                    <div style={{width:"25vw", marginLeft:"5rem"}}>
+                        <NoteSansLight fontColor={GREY_FONT_COLOR} fontSize="1.2vw">
                             {`마이인포 마켓은 세계 최초의 블록체인 기반
                                 개인 데이터 마켓 플랫폼입니다.
                                 
@@ -60,9 +60,9 @@ export const MyInfoMarketDescription = () => {
                                 중앙서버 DB에 저장했던 기존 데이터 시스탬보다
                                 개인 데이터 보호가 강화됩니다.`}
                         </NoteSansLight>
-                        <div style={{marginTop:"2rem"}}>
-                            <img style={{marginRight: "1rem"}} src="/images/google_button.png" alt="" />
-                            <img style={{marginRight: "1rem"}} src="/images/apple_button.png" alt="" />
+                        <div style={{marginTop:"2rem", display: "flex", width: "20vw"}}>
+                            <img style={{marginRight: "1rem", width: "10vw", height: "3vw"}} src="/images/google_button.png" alt="버튼1" />
+                            <img style={{marginRight: "1rem", width: "10vw", height: "3vw"}} src="/images/apple_button.png" alt="버튼2" />
                         </div>
                     </div>
                 </ImageContainer>

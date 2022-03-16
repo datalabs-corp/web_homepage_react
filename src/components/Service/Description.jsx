@@ -4,33 +4,33 @@ import { GREY_FONT_COLOR, WHITE_FONT_COLOR } from "../../common/color/color";
 import { GmarketMedium,GmarketBold, NoteSansLight } from "../../common/Text/Text";
 
 const DescriptionContainer = styled.div`
-    padding-top:10rem;
+    padding-top:10vw;
 `
 
 const Description1 = styled.div`
     display: flex;
     justify-content: space-between;
     align-items:center;
-    margin-bottom:5rem;
+    margin-bottom:5vw;
 `
 
 const Description2 = styled.div`
     display: flex;
     justify-content: space-between;
     align-items:center;
-    margin-bottom:5rem;
+    margin-bottom:5vw;
 `
 
 export const Description = () => {
     return (
         <DescriptionContainer>
             <Description1>
-                <div style={{ display: "flex",textAlign:"right", flex: 1, flexDirection:"column",margin: "5rem"}}>
-                    <GmarketMedium styles={{marginBottom:"1rem"}} fontColor={GREY_FONT_COLOR} fontSize={"2.4rem"} >{
+                <div style={{ display: "flex",textAlign:"right", flex: 1, flexDirection:"column",margin: "5vw"}}>
+                    <GmarketMedium styles={{marginBottom:"1vw"}} fontColor={GREY_FONT_COLOR} fontSize={"2.4vw"} >{
                         `블록체인 서비스를 보다 쉽게,
                         BaaS`
                     }</GmarketMedium>
-                    <NoteSansLight fontColor={GREY_FONT_COLOR} fontSize={"1rem"} >
+                    <NoteSansLight fontColor={GREY_FONT_COLOR} fontSize={"1vw"} >
                         {`데이터랩스는 블록체인 서비스를 쉽게 구현할 수 있도록
                         BaaS(Blockchain as a Service)를 제공합니다.
 
@@ -50,9 +50,9 @@ export const Description = () => {
                     <img style={{ width: "100%", height: "100%", objectFit: "cover",float:"right"}}  src="/images/service_description2.png" alt="서비스 설명 2"/>
                     <GmarketBold styles={{position: "absolute", top:100, opacity: 0.1, left:100}} fontColor={WHITE_FONT_COLOR} fontWeight={"bold"} fontSize={"18.75vw"}>API</GmarketBold>
                 </div>
-                <div style={{ display: "flex",textAlign:"left", flex: 1, flexDirection:"column",margin: "5rem"}}>
-                    <GmarketMedium styles={{marginBottom:"1rem"}} fontColor={GREY_FONT_COLOR} fontSize={"2.4rem"} >개발자를 위한 API 서비스</GmarketMedium>
-                    <NoteSansLight fontColor={GREY_FONT_COLOR} fontSize={"1rem"} >
+                <div style={{ display: "flex",textAlign:"left", flex: 1, flexDirection:"column",margin: "5vw"}}>
+                    <GmarketMedium styles={{marginBottom:"1vw"}} fontColor={GREY_FONT_COLOR} fontSize={"2.4vw"} >개발자를 위한 API 서비스</GmarketMedium>
+                    <NoteSansLight fontColor={GREY_FONT_COLOR} fontSize={"1vw"} >
                         {`데이터체인 블록체인을 이용해 자신만의 서비스를 만들려면
                         네트워크 노드를 운영해야 합니다.
 

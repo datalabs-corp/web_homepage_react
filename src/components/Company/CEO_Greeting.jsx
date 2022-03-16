@@ -20,7 +20,7 @@ const GreetingDescription = styled.div`
 export const CEOGreeting = () => {
     return (
         <GreetingSection>
-            <GmarketBold fontColor={PRIMARY_COLOR} fontSize={"3rem"} fontWeight={"bold"}>CEO 인사말</GmarketBold>
+            <GmarketBold fontColor={PRIMARY_COLOR} fontSize={"3vw"} fontWeight={"bold"}>CEO 인사말</GmarketBold>
             <GreetingDescription>
                 <div>
                     <img style={{width:"25vw"}} src="/images/ceo_profile.png" alt="프사"/>

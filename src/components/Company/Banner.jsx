@@ -17,8 +17,8 @@ export const Banner = () => {
     return (
         <BannerContainer>
             <div>
-                <GmarketBold fontColor={WHITE_FONT_COLOR} fontWeight={"bold"} fontSize={"2.8rem"}>Company</GmarketBold>
-                <NoteSansLight fontColor={WHITE_FONT_COLOR} fontSize={"1.2rem"}>블록체인으로 세상을 바꿉니다.</NoteSansLight>
+                <GmarketBold fontColor={WHITE_FONT_COLOR} fontWeight={"bold"} fontSize={"2.8vw"}>Company</GmarketBold>
+                <NoteSansLight fontColor={WHITE_FONT_COLOR} fontSize={"1.2vw"}>블록체인으로 세상을 바꿉니다.</NoteSansLight>
             </div>
             <div style={{position: "absolute", right: "10rem"}}>
                 <GmarketBold fontColor={WHITE_FONT_COLOR} fontSize={"15vw"} styles={{opacity: 0.15}}>Data</GmarketBold>

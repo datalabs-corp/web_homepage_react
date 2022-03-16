@@ -8,12 +8,11 @@ const IntroContainer = styled.div`
     justify-content: right;
     position: absolute;
     background-color: ${DEEP_BLUE_COLOR};
-    /* min-width: 30rem; */
     width: 80vw;
-    height: 29rem;
+    height: 29vw;
     padding: 6rem;
     left: 10%;
-    bottom: -25rem;
+    bottom: -25vw;
 `
 
 const IntroDescription = styled.div`
@@ -23,16 +22,13 @@ const IntroDescription = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 4rem;
-    left: 7rem;
+    padding: 4vw;
+    left: 7vw;
     top: -5rem;
 `
 
 const IntroTitle = styled.div`
     display: flex;
-    /* width: 40%; */
-    /* justify-content: flex-end;
-    align-items: flex-end; */
 `
 
 export const Intro = () => {
@@ -40,8 +36,8 @@ export const Intro = () => {
         <IntroContainer>
             <IntroDescription>
                 <div>
-                    <GmarketBold styles={{marginBottom: "1rem"}} fontColor={PRIMARY_COLOR} fontWeight={"bold"} fontSize={"2.6rem"}>Block-Chain</GmarketBold>
-                    <NoteSansLight fontColor={GREY_FONT_COLOR} fontSize={"1rem"}>
+                    <GmarketBold styles={{marginBottom: "1rem"}} fontColor={PRIMARY_COLOR} fontWeight={"bold"} fontSize={"2.6vw"}>Block-Chain</GmarketBold>
+                    <NoteSansLight fontColor={GREY_FONT_COLOR} fontSize={"1vw"}>
                         {`블록체인은 거래의 기록 및 관리에 대한 권한을
                         중앙기관없이 P2P 네트워크를 통해 분산하여
                         원장(Ledger)을 블록에 기록하고 관리하는 기술입니다.

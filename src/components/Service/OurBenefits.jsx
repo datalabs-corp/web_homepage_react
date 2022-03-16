@@ -42,7 +42,7 @@ const BenefitsSection = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom:10rem;
+    margin-bottom:10vw;
 `
 
 const TitleContainer = styled.div`
@@ -53,7 +53,7 @@ const TitleContainer = styled.div`
 
 const ItemsContainer = styled.div`
     display: flex;
-    margin: 3rem;
+    margin: 3vw;
 `
 
 const Item = styled.div`
@@ -61,30 +61,30 @@ const Item = styled.div`
     flex-direction: column;
     align-items: center;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-    padding: 3.8rem;
-    height: 27.5rem;
-    width: 19rem;
-    margin: 0.5rem;
+    padding: 3.8vw;
+    height: 27.5vw;
+    width: 19vw;
+    margin: 0.5vw;
 `
 
 const ItemImage = styled.img`
     background-color: ${PRIMARY_COLOR};
-    padding: 1rem;
-    border-radius: 1rem;
-    width: 6rem;
-    height: 6rem;
+    padding: 1vw;
+    border-radius: 1vw;
+    width: 6vw;
+    height: 6vw;
 `
 
 const BenefitsItem = ({ image, title, description }) => {
     return (
         <Item>
             <ItemImage src={image} alt="아이템"/>
-                <GmarketMedium styles={{marginTop:"1rem",marginBottom: "1rem"}} fontColor={GREY_FONT_COLOR} fontSize={"1.8rem"} >{title}</GmarketMedium>
+                <GmarketMedium styles={{marginTop:"1vw",marginBottom: "1vw"}} fontColor={GREY_FONT_COLOR} fontSize={"1.8vw"} >{title}</GmarketMedium>
                 <ul>
                     {description.map((e, index) => {
                         return (
-                            <li key={index} style={{listStyle: "disc", margin: "1rem" }}>
-                                <NoteSansLight fontColor={GREY_FONT_COLOR} fontSize={"1rem"} >{e}</NoteSansLight>
+                            <li key={index} style={{listStyle: "disc", margin: "1vw" }}>
+                                <NoteSansLight fontColor={GREY_FONT_COLOR} fontSize={"1vw"} >{e}</NoteSansLight>
                             </li>
                         )
                     })}
@@ -97,7 +97,7 @@ export const OurBenefits = () => {
     return (
         <BenefitsSection>
             <TitleContainer>
-                <GmarketMedium fontColor={PRIMARY_COLOR} fontSize={"3rem"} >Our Benefits</GmarketMedium>
+                <GmarketMedium fontColor={PRIMARY_COLOR} fontSize={"3vw"} >Our Benefits</GmarketMedium>
             </TitleContainer>
             <ItemsContainer>
                 {items.map((item, index) => {

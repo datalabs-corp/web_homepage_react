@@ -50,8 +50,8 @@ const IdeoItem = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 20rem;
-    margin:2rem;
+    height: 20vw;
+    margin:2vw;
 
     & p {
         text-align: center;
@@ -59,9 +59,11 @@ const IdeoItem = styled.div`
 `
 
 const ItemImageContainer = styled.div`
-    width: 10rem;
-    height: 10rem;
+    width: 10vw;
+    height: 10vw;
     background-image: url(${(props) => props.background});
+    background-position: cover;
+    background-size: cover;
     padding: 3rem;
     border-radius: 50%;
 `
@@ -78,10 +80,10 @@ const Item = ({ background, title, subTitle, icon }) => {
                 <ItemImageContainer background={background}>
                     <ItemImage src={icon} alt="아이템 사진" />
                 </ItemImageContainer>
-                <GmarketBold fontColor={PRIMARY_COLOR} fontSize={"1.8rem"} fontWeight={"bold"}>{title}</GmarketBold>
+                <GmarketBold fontColor={PRIMARY_COLOR} fontSize={"1.8vw"} fontWeight={"bold"}>{title}</GmarketBold>
                 <div>
                     {subTitle.map((e, index) => {
-                        return <NoteSansMedium key={index} fontColor={GREY_FONT_COLOR} fontSize={"1.3rem"}>{e}</NoteSansMedium>
+                        return <NoteSansMedium key={index} fontColor={GREY_FONT_COLOR} fontSize={"1.3vw"}>{e}</NoteSansMedium>
                     })}
                 </div>
             </IdeoItem>
@@ -93,9 +95,9 @@ export const Ideology = () => {
     return (
         <IdeoSection>
             <GmarketMedium 
-                styles={{marginBottom: "3rem"}} 
+                styles={{marginBottom: "3vw"}} 
                 fontColor={GREY_FONT_COLOR} 
-                fontSize={"2.6rem"} 
+                fontSize={"2.6vw"} 
             >
                 데이터랩스는 이렇게 일합니다.
             </GmarketMedium>
@@ -107,7 +109,7 @@ export const Ideology = () => {
                     } else {
                         return (
                             <div key={index} style={{display:"flex", alignItems:"center"}}>
-                                <img style={{width:"2.3rem", height:"2.3rem"}} src="/images/plus.png"/>
+                                <img style={{width:"2.3vw", height:"2.3vw"}} src="/images/plus.png"/>
                             </div>
                         )
                     }

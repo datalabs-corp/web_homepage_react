@@ -48,8 +48,8 @@ const IntroButton = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:17rem;
-    padding:2rem;
+    width:17vw;
+    padding:2vw;
     cursor: pointer;
     background-color: ${(props) => {
             const { id, buttonIndex } = props;
@@ -79,14 +79,14 @@ const Button = ({ id, mainTitle, subTitle, handleButton, buttonIndex }) => {
     return (
         <IntroButton id={id} buttonIndex={buttonIndex} onClick={() => {handleButton(id)}}>
             <GmarketBold 
-                fontSize={"2rem"} 
+                fontSize={"2vw"} 
                 fontWeight={"bold"} 
                 fontColor={WHITE_FONT_COLOR} 
                 styles={{opacity: 0.5}}
             >{mainTitle}
             </GmarketBold>
             <NoteSansLight 
-                fontSize={"1rem"} 
+                fontSize={"1vw"} 
                 fontColor={WHITE_FONT_COLOR} 
                 styles={{opacity: 0.5}} 
             >{subTitle}
@@ -107,24 +107,24 @@ export const Introduction = () => {
             <IntroSection>
                 <GmarketBold 
                     fontColor={WHITE_FONT_COLOR} 
-                    fontSize={"3rem"} 
+                    fontSize={"3vw"} 
                     fontWeight={"bold"}
                 >Company
                 </GmarketBold>
                 <NoteSansLight 
                     fontColor={WHITE_FONT_COLOR} 
-                    fontSize={"1.4rem"}
+                    fontSize={"1.4vw"}
                 >데이터랩스를 소개합니다.
                 </NoteSansLight>
                 <GmarketBold 
                     fontColor={WHITE_FONT_COLOR} 
-                    fontSize={"3rem"} 
+                    fontSize={"3vw"} 
                     styles={{opacity: 0.5, marginTop:"2rem"}}
                 >"상상이 현실이 되고
                 </GmarketBold>
                 <GmarketBold 
                     fontColor={WHITE_FONT_COLOR} 
-                    fontSize={"3rem"} 
+                    fontSize={"3vw"} 
                     styles={{opacity: 0.5}}
                 >개인이 주체가 되는 회사"
                 </GmarketBold>

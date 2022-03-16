@@ -55,8 +55,8 @@ const CharItem = styled.div`
     background-color: white;
     margin: 1rem;
     min-width:19rem;
-    width: 19rem;
-    height: 21rem;
+    width: 17vw;
+    height: 18vw;
     align-items: center;
     justify-content: center;
     padding : 2rem;
@@ -78,12 +78,12 @@ const CurcleImage = styled.div`
 const Item = ({image, headTitle, subTitle, desciption1, desciption2, desciption3}) => {
     return (
         <CharItem>
-            <GmarketBold fontColor={PRIMARY_COLOR} fontSize={"1.8rem"} fontWeight={"bold"}>{`"${headTitle}"`}</GmarketBold>
-            <GmarketBold fontColor={"#979aba"} fontSize={"1.8rem"} fontWeight={"bold"}>{subTitle}</GmarketBold>
+            <GmarketBold fontColor={PRIMARY_COLOR} fontSize={"1.8vw"} fontWeight={"bold"}>{`"${headTitle}"`}</GmarketBold>
+            <GmarketBold fontColor={"#979aba"} fontSize={"1.8vw"} fontWeight={"bold"}>{subTitle}</GmarketBold>
             <div style={{marginTop: "1rem", textAlign:"center"}}>
-                <NoteSansMedium fontColor={GREY_FONT_COLOR} fontSize={"1rem"} >{desciption1}</NoteSansMedium>
-                <NoteSansMedium fontColor={GREY_FONT_COLOR} fontSize={"1rem"} >{desciption2}</NoteSansMedium>
-                <NoteSansMedium fontColor={GREY_FONT_COLOR} fontSize={"1rem"} >{desciption3}</NoteSansMedium>
+                <NoteSansMedium fontColor={GREY_FONT_COLOR} fontSize={"1vw"} >{desciption1}</NoteSansMedium>
+                <NoteSansMedium fontColor={GREY_FONT_COLOR} fontSize={"1vw"} >{desciption2}</NoteSansMedium>
+                <NoteSansMedium fontColor={GREY_FONT_COLOR} fontSize={"1vw"} >{desciption3}</NoteSansMedium>
             </div> 
             <CurcleImage>
                 <img src={image} alt="아이콘 이미지"/>
@@ -96,9 +96,9 @@ export const MyInfoMarketCharacteristics = () => {
     return (
         <CharContainer>
             <CharTitleContainer>
-                <GmarketBold fontColor={PRIMARY_COLOR} fontSize={"2.5rem"} fontWeight={"bold"}>마이 인포 마켓만의</GmarketBold>
-                <GmarketBold fontColor={PRIMARY_COLOR} fontSize={"2.5rem"} fontWeight={"bold"}>3가지 특징</GmarketBold>
-                <NoteSansMedium fontColor={GREY_FONT_COLOR} fontSize={"1.4rem"} >마이 인포 마켓만의 특별한 3가지 장점을 소개합니다.</NoteSansMedium>
+                <GmarketBold fontColor={PRIMARY_COLOR} fontSize={"2.5vw"} fontWeight={"bold"}>마이 인포 마켓만의</GmarketBold>
+                <GmarketBold fontColor={PRIMARY_COLOR} fontSize={"2.5vw"} fontWeight={"bold"}>3가지 특징</GmarketBold>
+                <NoteSansMedium fontColor={GREY_FONT_COLOR} fontSize={"1.4vw"} >마이 인포 마켓만의 특별한 3가지 장점을 소개합니다.</NoteSansMedium>
             </CharTitleContainer>
             <CharItemsContainer>
                 {items.map((item,index) => {
