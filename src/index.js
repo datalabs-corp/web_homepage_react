@@ -15,7 +15,7 @@ import Footer from "./components/Footer/Footer";
 import Recruit from "./components/Recruit/Recruit";
 
 ReactDOM.render(
-  <BrowserRouter basename='https://datalabs-corp.github.io/web_homepage_react/'>
+  <BrowserRouter>
     <Navbar />
     <Routes>
       <Route path="/" element={<MyInfoMarket />} />
