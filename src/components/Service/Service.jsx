@@ -10,6 +10,7 @@ const ServiceSection = styled.section`
 `
 
 const Service = () => {
+    window.scrollTo(0,0);
     return (
         <ServiceSection>
             <Banner />

@@ -10,6 +10,7 @@ const TechSection = styled.section`
 `
 
 const Technology = () => {
+    window.scrollTo(0,0);
     return (
         <TechSection>
             <Banner />
