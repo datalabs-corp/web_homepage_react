@@ -30,7 +30,7 @@ const data = {
                 "소프트웨어 공학에 대한 기본 지식을 보유하고 계신 분",
                 "제품의 설계, 구현, 배포 및 유지 관리 경험이 있으신 분",
                 "능동적인 업무 진행 및 결과 보고서 표현력 및 전달력이 있으신 분",
-                "유관부서와 원할한 협업 및 커뮤니케이션 능력이 있으신 분",
+                "유관부서와 원활한 협업 및 커뮤니케이션 능력이 있으신 분",
                 "문제를 파악, 정의하고 해결 방안을 제시하는 것을 좋아하는 분"
             ]
         },
@@ -210,7 +210,7 @@ const DevAndPlanner = ({ job }) => {
                             description.common.map((list,index) => {
                                 return (
                                     <li key={index}>
-                                        <NoteSansLight fontColor={DEEP_BLUE_COLOR}>
+                                        <NoteSansLight fontColor={DEEP_BLUE_COLOR} fontSize={"1vw"}>
                                             {list}
                                         </NoteSansLight>
                                     </li>

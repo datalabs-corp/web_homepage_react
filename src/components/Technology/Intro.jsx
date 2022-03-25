@@ -36,7 +36,7 @@ export const Intro = () => {
         <IntroContainer>
             <IntroDescription>
                 <div>
-                    <GmarketBold styles={{marginBottom: "1rem"}} fontColor={PRIMARY_COLOR} fontWeight={"bold"} fontSize={"2.6vw"}>Block-Chain</GmarketBold>
+                    <GmarketBold styles={{marginBottom: "1rem"}} fontColor={PRIMARY_COLOR} fontWeight={"bold"} fontSize={"2.6vw"}>Blockchain</GmarketBold>
                     <NoteSansLight fontColor={GREY_FONT_COLOR} fontSize={"1vw"}>
                         {`블록체인은 거래의 기록 및 관리에 대한 권한을
                         중앙기관없이 P2P 네트워크를 통해 분산하여
