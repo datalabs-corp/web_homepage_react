@@ -15,7 +15,7 @@ import Footer from "./components/Footer/Footer";
 import Recruit from "./components/Recruit/Recruit";
 
 ReactDOM.render(
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
+  <BrowserRouter>
     <Navbar />
     <Routes>
       <Route path="/" element={<MyInfoMarket />} />
