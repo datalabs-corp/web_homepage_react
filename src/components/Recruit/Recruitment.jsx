@@ -305,8 +305,8 @@ export const Recruitment = () => {
                                     서울 강남구 강남대로 464 패스트파이브 4층 406호
                                 </NoteSansLight>
                             </div>
-                            <div style={{margin: "1vw"}}>
-                                <img src="/images/company1.png" alt="지도"/>
+                            <div style={{margin: "1vw", width:"40rem" }}>
+                                <img style={{width:"100%",height:"100%"}} src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648171789/images/company1_i9yred.png" alt="신논현지점 지도"/>
                             </div>
                         </li>
                         <li>
@@ -318,8 +318,8 @@ export const Recruitment = () => {
                                     서울 마포구 마포대로 92 (도화동, 효성해링턴스퀘어) A동 7층
                                 </NoteSansLight>
                             </div>
-                            <div style={{margin: "1vw"}}>
-                                <img src="/images/company1.png" alt="지도"/>
+                            <div style={{margin: "1vw", width:"40rem" }}>
+                                <img style={{width:"100%",height:"100%"}} src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648171796/images/company2_moehpv.png" alt="공덕지점 지도"/>
                             </div>
                         </li>
                     </UnOrderListStyle>

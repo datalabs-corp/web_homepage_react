@@ -5,19 +5,19 @@ import { PRIMARY_COLOR, GREY_FONT_COLOR, DEEP_BLUE_COLOR} from "../../common/col
 
 const Items = [
     {
-        image: "/images/pro.png",
+        image: "https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086091/images/pro_b1vbkr.png",
         title: "Pro 정신",
         subTitle: ["프로정신과", "책임감 있는 인재"],
     },
     null,
     {
-        image: "/images/light.png",
+        image: "https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086088/images/light_r8uwnz.png",
         title: "의미있는 일",
         subTitle: ["유의미한 일을", "추구하는 인재"],
     },
     null,
     {
-        image: "/images/graph.png",
+        image: "https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086089/images/graph_ggfo1x.png",
         title: "개인의 성공은 회사의 성공",
         subTitle: ["개인의 성장을", "최우선으로 하는 인재"],
     },
@@ -102,7 +102,7 @@ export const Intro = () => {
                         } else {
                             return (
                                 <div key={index} style={{display:"flex", alignItems:"center"}}>
-                                    <img style={{width:"2.3vw", height:"2.3vw"}} src="/images/plus.png" alt="이미지"/>
+                                    <img style={{width:"2.3vw", height:"2.3vw"}} src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086085/images/plus_pdlzdq.png" alt="이미지"/>
                                 </div>
                             )
                         }

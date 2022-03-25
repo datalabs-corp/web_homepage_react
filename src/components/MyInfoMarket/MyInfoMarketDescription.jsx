@@ -48,7 +48,7 @@ export const MyInfoMarketDescription = () => {
                     <NoteSansMedium fontColor={PRIMARY_COLOR} fontSize="1.4vw" >개인 정보를 디지털 자산화 합니다.</NoteSansMedium>
                 </LogoTitleContainer>
                 <ImageContainer >
-                    <img style={{width: "20vw"}} src="images/my_info_phone.png" alt="폰 사진"/>
+                    <img style={{width: "20vw"}} src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086089/images/my_info_phone_drqbjm.webp" alt="폰 사진"/>
                     <div style={{width:"25vw", marginLeft:"5rem"}}>
                         <NoteSansLight fontColor={GREY_FONT_COLOR} fontSize="1.2vw">
                             {`마이인포 마켓은 세계 최초의 블록체인 기반
@@ -61,8 +61,10 @@ export const MyInfoMarketDescription = () => {
                                 개인 데이터 보호가 강화됩니다.`}
                         </NoteSansLight>
                         <div style={{marginTop:"2rem", display: "flex", width: "20vw"}}>
-                            <img style={{marginRight: "1rem", width: "10vw", height: "3vw"}} src="/images/google_button.png" alt="버튼1" />
-                            <img style={{marginRight: "1rem", width: "10vw", height: "3vw"}} src="/images/apple_button.png" alt="버튼2" />
+                            <a href="https://play.google.com/store/apps/details?id=com.onedaydemo" rel="noreferrer" target="_blank">
+                                <img style={{marginRight: "1rem", width: "10vw", height: "3vw"}} src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086085/images/google_button_cyoahz.png" alt="버튼1" /> 
+                            </a>
+                            <img style={{marginRight: "1rem", width: "10vw", height: "3vw"}} src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086087/images/apple_button_dsxirk.png" alt="버튼2" />
                         </div>
                     </div>
                 </ImageContainer>

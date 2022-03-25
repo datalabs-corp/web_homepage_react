@@ -5,7 +5,7 @@ import { GmarketBold, NoteSansLight } from "../../common/Text/Text";
 
 const BannerContainer = styled.div`
   display: flex;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(17, 39, 97, 0.3)), url("/images/service_banner.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(17, 39, 97, 0.3)), url("https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086090/images/service_banner_qqmnof.webp");
   background-repeat: no-repeat;
   background-size: cover;
   height:30rem;

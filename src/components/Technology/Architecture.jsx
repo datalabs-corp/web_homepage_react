@@ -19,7 +19,7 @@ export const Architecture = () => {
                 <MyInfoText fontColor={PRIMARY_COLOR} fontSize={"3rem"} fontWeight={"bold"}>Architecture</MyInfoText>
                 <MyInfoText fontColor={GREY_FONT_COLOR} fontSize={"1.4rem"}>데이터체인 3 - Layer</MyInfoText>
             </div>
-            <img style={{width:"70vw"}} src="/images/arch_image.png" alt="이미지"/>
+            <img style={{width:"70vw"}} src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086090/images/Arch_image_mkw4gk.webp" alt="이미지"/>
         </ArchSection>
     )
 }

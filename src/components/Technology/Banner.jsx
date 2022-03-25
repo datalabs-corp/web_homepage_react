@@ -7,7 +7,7 @@ import { Intro } from "./Intro";
 const BannerContainer = styled.div`
     display: flex;
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(17, 39, 97, 0.3)), url("/images/technology_background.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(17, 39, 97, 0.3)), url("https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086088/images/technology_background_pmlptc.webp");
     background-repeat: no-repeat;
     background-size: cover;
     height: 30rem;

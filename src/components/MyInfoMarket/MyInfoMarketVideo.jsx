@@ -26,12 +26,12 @@ export const MyInfoMarketVideo = () => {
         <VideoSection>
             <VideoContainer>
                 <div style={{textAlign:"center", marginBottom:40}}>
-                    <GmarketBold fontColor={PRIMARY_COLOR} fontWeight="bold" fontSize="2.5vw">마이인포 마켓을</GmarketBold>
+                    <GmarketBold fontColor={PRIMARY_COLOR} fontWeight="bold" fontSize="2.5vw">마이 인포 마켓을</GmarketBold>
                     <GmarketBold fontColor={PRIMARY_COLOR} fontWeight="bold" fontSize="2.5vw">영상으로 만나보세요</GmarketBold>
                     <NoteSansMedium fontColor={GREY_FONT_COLOR} fontSize="1.4vw">영상 소개</NoteSansMedium>
                 </div>
                 <Youtube
-                    videoId="WxDCunYnkrU"
+                    videoId="F2iaN0SkPSM"
                     opts={youTubeOptions}
                 />
             </VideoContainer>

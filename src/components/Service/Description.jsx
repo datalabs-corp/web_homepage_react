@@ -41,13 +41,13 @@ export const Description = () => {
                     </NoteSansLight>
                 </div>
                 <div style={{position:"relative", flex:1.7, display:"flex"}}>
-                    <img style={{ width: "100%", height: "100%", objectFit: "cover",float:"right"}}  src="/images/service_description1.png" alt="서비스 설명 1"/>
+                    <img style={{ width: "100%", height: "100%", objectFit: "cover",float:"right"}}  src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086090/images/service_description1_herb4a.webp" alt="서비스 설명 1"/>
                     <GmarketBold styles={{position: "absolute", bottom: 0, opacity: 0.1, right:0}} fontColor={WHITE_FONT_COLOR} fontWeight={"bold"} fontSize={"18.75vw"}>BaaS</GmarketBold>
                 </div>
             </Description1>
             <Description2>
                 <div style={{position:"relative", flex:1.7, display:"flex"}}>
-                    <img style={{ width: "100%", height: "100%", objectFit: "cover",float:"right"}}  src="/images/service_description2.png" alt="서비스 설명 2"/>
+                    <img style={{ width: "100%", height: "100%", objectFit: "cover",float:"right"}}  src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086087/images/service_description2_j4rhst.webp" alt="서비스 설명 2"/>
                     <GmarketBold styles={{position: "absolute", top:100, opacity: 0.1, left:100}} fontColor={WHITE_FONT_COLOR} fontWeight={"bold"} fontSize={"18.75vw"}>API</GmarketBold>
                 </div>
                 <div style={{ display: "flex",textAlign:"left", flex: 1, flexDirection:"column",margin: "5vw"}}>

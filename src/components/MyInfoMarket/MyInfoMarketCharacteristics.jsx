@@ -5,7 +5,7 @@ import { PRIMARY_COLOR, GREY_FONT_COLOR } from "../../common/color/color";
 
 const items = [
     {   
-        image: "/images/chain.png",
+        image: "https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086085/images/chain_kluudm.png",
         headTitle : "진정한",
         subTitle : "마이데이터",
         desciption1 : "마이 인포 마켓은 개인 정보를",
@@ -13,7 +13,7 @@ const items = [
         desciption3 : "제공 이력을 관리할 수 있습니다.",
     },
     {
-        image: "/images/coin.png",
+        image: "https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086090/images/coin_jegdkd.png",
         headTitle : "보상받는",
         subTitle : "마이데이터",
         desciption1 : "제 3의 동의 절차 없이",
@@ -21,7 +21,7 @@ const items = [
         desciption3 : "보상받을 수 있습니다.",
     },
     {
-        image: "/images/handshake.png",
+        image: "https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086090/images/handshake_a57e3r.png",
         headTitle : "믿을 수 있는",
         subTitle : "마이데이터",
         desciption1 : "마이데이터를",
@@ -34,7 +34,7 @@ const items = [
 const CharContainer = styled.section`
     background-color: #EEEEEE;
     padding: 10rem;
-    background-image: url("/images/my_info_characteristics_background.png");
+    background-image: url("https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086088/images/my_info_characteristics_background_sfh0iu.webp");
 `
 
 const CharTitleContainer = styled.div`
@@ -54,13 +54,12 @@ const CharItem = styled.div`
     flex-direction: column;
     background-color: white;
     margin: 1rem;
-    min-width:19rem;
-    width: 17vw;
+    min-width:13rem;
+    min-height: 10rem;
+    width: 20vw;
     height: 18vw;
     align-items: center;
     justify-content: center;
-    padding : 2rem;
-    padding-top:5rem;
 `
 
 const CurcleImage = styled.div`
@@ -68,25 +67,25 @@ const CurcleImage = styled.div`
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: -5rem;
+    top: -5vw;
     background-color: ${PRIMARY_COLOR};
-    width: 10rem;
-    height: 10rem;
+    width: 10vw;
+    height: 10vw;
     border-radius: 50%;
 `
 
 const Item = ({image, headTitle, subTitle, desciption1, desciption2, desciption3}) => {
     return (
         <CharItem>
-            <GmarketBold fontColor={PRIMARY_COLOR} fontSize={"1.8vw"} fontWeight={"bold"}>{`"${headTitle}"`}</GmarketBold>
+            <GmarketBold styles={{marginTop:"4rem"}} fontColor={PRIMARY_COLOR} fontSize={"1.8vw"} fontWeight={"bold"}>{`"${headTitle}"`}</GmarketBold>
             <GmarketBold fontColor={"#979aba"} fontSize={"1.8vw"} fontWeight={"bold"}>{subTitle}</GmarketBold>
-            <div style={{marginTop: "1rem", textAlign:"center"}}>
+            <div style={{marginTop: "1rem", textAlign:"center",marginBottom: "1rem"}}>
                 <NoteSansMedium fontColor={GREY_FONT_COLOR} fontSize={"1vw"} >{desciption1}</NoteSansMedium>
                 <NoteSansMedium fontColor={GREY_FONT_COLOR} fontSize={"1vw"} >{desciption2}</NoteSansMedium>
                 <NoteSansMedium fontColor={GREY_FONT_COLOR} fontSize={"1vw"} >{desciption3}</NoteSansMedium>
             </div> 
             <CurcleImage>
-                <img src={image} alt="아이콘 이미지"/>
+                <img style={{width:"50%", height:"50%"}} src={image} alt="아이콘 이미지"/>
             </CurcleImage>
         </CharItem>
     )

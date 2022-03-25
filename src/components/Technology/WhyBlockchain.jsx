@@ -8,7 +8,7 @@ const items = [
     {   
         id: 1,
         title: "개인 데이터 주권",
-        image: "/images/why_item1.png",
+        image: "https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086085/images/why_item1_ih2ryq.webp",
         text: `기존 마이데이터는 유저의 정보를 데이터 보유사의
         중앙 DB에 저장하여 기업의 필요에 따라 관리해왔습니다.
 
@@ -21,7 +21,7 @@ const items = [
     {   
         id: 2,
         title: "개인 정보데이터의 탈중앙화",
-        image: "/images/why_item2.png",
+        image: "https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086092/images/why_item2_xe51ke.webp",
         text: `개인 정보를 개개인의 기기에 저장함으로써
         중앙 서버에서 DB를 가져오는 기존 방식과는 다르게
         데이터의 탈중앙화 관리가 가능해집니다.
@@ -33,7 +33,7 @@ const items = [
     {
         id: 3,
         title: "투명한 원장",
-        image: "/images/why_item3.png",
+        image: "https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086092/images/why_item3_biwshe.webp",
         text: `마이데이터 거래 내역은 블록체인 원장에 기록되어
         이것은 나의 데이터가 어떻게 이동했는지
         투명하게 확인할 수 있습니다.
@@ -99,7 +99,7 @@ export const WhyBlockchain = () => {
         <WhyContainer>
             <div style={{textAlign:"center", margin: "2vw"}}>
                 <GmarketBold fontColor={PRIMARY_COLOR} fontWeight={"bold"} fontSize={"3vw"} >Why</GmarketBold>
-                <GmarketBold fontColor={PRIMARY_COLOR} fontWeight={"bold"} fontSize={"3vw"} >Block chain</GmarketBold>
+                <GmarketBold fontColor={PRIMARY_COLOR} fontWeight={"bold"} fontSize={"3vw"} >Blockchain</GmarketBold>
                 <NoteSansMedium fontColor={GREY_FONT_COLOR} fontSize={"1vw"} >데이터랩스가 블록체인을 지향하는 이유</NoteSansMedium>
             </div>
             <SlideImageContainer>
@@ -128,7 +128,7 @@ export const WhyBlockchain = () => {
                                         ...arrowStyles,
                                         left: "8rem",
                                         width: "1vw",
-                                    }} ><img src="/images/blue_left_arrow.png" alt="왼쪽 화살표"/></div>)
+                                    }} ><img src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086090/images/blue_left_arrow_fmfbc9.png" alt="왼쪽 화살표"/></div>)
                             }}
                             renderArrowNext={(onClickHandler, hasNext, label) => {
                                 return (<div 
@@ -138,21 +138,22 @@ export const WhyBlockchain = () => {
                                         ...arrowStyles,
                                         right: "8rem",
                                         width: "1vw",
-                                    }} ><img src="/images/blue_right_arrow.png" alt="오른쪽 화살표"/></div>)
+                                    }} ><img src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086090/images/blue_right_arrow_co6kzw.png" alt="오른쪽 화살표"/></div>)
                                 }}
                                 onChange={(index)=>{ setItem(index)}}
                                 showThumbs={false}
                                 renderIndicator={false}
                                 infiniteLoop={true}
+                                autoPlay={true}
                             >
                             <div>
-                                <img src="/images/why_slide1.png" alt="백그라운드 이미지" ></img>
+                                <img src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086088/images/why_slide1_ctbjjf.webp" alt="백그라운드 이미지" ></img>
                             </div>
                             <div>
-                                <img src="/images/why_slide2.png" alt="백그라운드 이미지" ></img>
+                                <img src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086092/images/why_slide2_mft5vv.webp" alt="백그라운드 이미지" ></img>
                             </div>
                             <div>
-                                <img src="/images/why_slide3.png" alt="백그라운드 이미지" ></img>
+                                <img src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086091/images/why_slide3_lyxc8l.webp" alt="백그라운드 이미지" ></img>
                             </div>
                         </Carousel>
                     </div>

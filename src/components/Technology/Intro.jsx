@@ -10,7 +10,7 @@ const IntroContainer = styled.div`
     background-color: ${DEEP_BLUE_COLOR};
     width: 80vw;
     height: 29vw;
-    padding: 6rem;
+    padding: 6vw;
     left: 10%;
     bottom: -25vw;
 `

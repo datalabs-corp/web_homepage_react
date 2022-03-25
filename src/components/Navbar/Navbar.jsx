@@ -38,7 +38,7 @@ const Navbar = () => {
     return (
         <NavbarContainer>
             <LogoContainer >
-                <img src="/images/company__logo.png" alt="회사 로고" style={{width:"100%", height:"100%"}}/>
+                <img src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086088/images/company__logo_a32s9l.png" alt="회사 로고" style={{width:"100%", height:"100%"}}/>
             </LogoContainer>
             <UnOrderList>
                 <List>
