@@ -55,7 +55,7 @@ export const MyInfoMarketDescription = () => {
                                 개인 데이터 마켓 플랫폼입니다.
                                 
                                 마이 인포 운영 및 거래를
-                                개인이 주도적으로 하며 그에 따른 복상이 주어집니다.
+                                개인이 주도적으로 하며 그에 따른 보상이 주어집니다.
                                 블록체인 기술을 활용하여
                                 중앙서버 DB에 저장했던 기존 데이터 시스탬보다
                                 개인 데이터 보호가 강화됩니다.`}
@@ -64,7 +64,9 @@ export const MyInfoMarketDescription = () => {
                             <a href="https://play.google.com/store/apps/details?id=com.onedaydemo" rel="noreferrer" target="_blank">
                                 <img style={{marginRight: "1rem", width: "10vw", height: "3vw"}} src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086085/images/google_button_cyoahz.png" alt="버튼1" /> 
                             </a>
-                            <img style={{marginRight: "1rem", width: "10vw", height: "3vw"}} src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086087/images/apple_button_dsxirk.png" alt="버튼2" />
+                            <a href="https://apps.apple.com/us/app/%EB%A7%88%EC%9D%B4%EC%9D%B8%ED%8F%AC%EB%A7%88%EC%BC%93/id1612552713" rel="noreferrer" target="_blank">
+                                <img style={{marginRight: "1rem", width: "10vw", height: "3vw"}} src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086087/images/apple_button_dsxirk.png" alt="버튼2" />
+                            </a>
                         </div>
                     </div>
                 </ImageContainer>
