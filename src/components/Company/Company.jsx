@@ -5,6 +5,7 @@ import { Introduction } from "./Introduction";
 
 
 const Company = () => {
+    window.scrollTo(0,0);
     return (
         <div>
             <Banner />

@@ -122,10 +122,10 @@ export const Intro = () => {
                         <NoteSansLight fontColor={GREY_FONT_COLOR} fontSize={"1.2vw"} >서로에게 맞는 체계를 만들어야 하기 때문에 어려울 수도 있습니다.</NoteSansLight>
                     </List>
                     <List>
-                        <NoteSansLight fontColor={GREY_FONT_COLOR} fontSize={"1.2vw"} >그러나 열린 마음으로 하는 대화는 데이터 랩스만의 장점입니다.</NoteSansLight>
+                        <NoteSansLight fontColor={GREY_FONT_COLOR} fontSize={"1.2vw"} >그러나 열린 마음으로 하는 대화는 데이터랩스만의 장점입니다.</NoteSansLight>
                     </List>
                     <List>
-                        <NoteSansLight fontColor={GREY_FONT_COLOR} fontSize={"1.2vw"} >새로운 시장과 합리적인 체계를 함께 구축해, 좋은 회사를 만들고 싶으신 분들께 데이터 랩스의 문은 활짝 열려 있습니다.</NoteSansLight>
+                        <NoteSansLight fontColor={GREY_FONT_COLOR} fontSize={"1.2vw"} >새로운 시장과 합리적인 체계를 함께 구축해, 좋은 회사를 만들고 싶으신 분들께 데이터랩스의 문은 활짝 열려 있습니다.</NoteSansLight>
                     </List>
                 </ul>
             </div>

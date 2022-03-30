@@ -9,6 +9,7 @@ const RecruitSection = styled.section`
 `
 
 const Recruit = () => {
+    window.scrollTo(0,0);
     return (
         <RecruitSection>
             <Banner />
