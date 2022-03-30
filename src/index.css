@@ -7,6 +7,7 @@
 }
 
 p {
+  margin:0.2rem;
   white-space: pre-line;
   word-break: keep-all;
 }

@@ -44,7 +44,7 @@ const arrowStyles = {
 
 const SlideBackground = styled.div`
     display: flex;
-    height: 90vh;
+    height: 35vw;
     justify-content: space-between;
     align-items: center;
     padding: 10vw 15vw 10vw 15vw;

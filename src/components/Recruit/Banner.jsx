@@ -8,8 +8,8 @@ const BannerContainer = styled.div`
     background-image: linear-gradient(rgba(4, 18, 55, 0.5), rgba(4, 18, 55, 0.5)), url("https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086090/images/recruit_banner_tudxbd.webp");
     background-repeat: no-repeat;
     background-size: cover;
-    height:30rem;
-    padding: 20vw;
+    height:30vw;
+    padding-left: 15vw;
     align-items: center;
 `
 

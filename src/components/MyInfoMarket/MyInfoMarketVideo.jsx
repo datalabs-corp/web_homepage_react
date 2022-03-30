@@ -31,7 +31,7 @@ export const MyInfoMarketVideo = () => {
                     <NoteSansMedium fontColor={GREY_FONT_COLOR} fontSize="1.4vw">영상 소개</NoteSansMedium>
                 </div>
                 <Youtube
-                    videoId="F2iaN0SkPSM"
+                    videoId="gIkRQJbZf84"
                     opts={youTubeOptions}
                 />
             </VideoContainer>

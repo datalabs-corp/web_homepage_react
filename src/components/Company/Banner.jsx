@@ -8,8 +8,8 @@ const BannerContainer = styled.div`
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(17, 39, 97, 0.3)), url("https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086088/images/company_banner_pndtgn.webp");
     background-repeat: no-repeat;
     background-size: cover;
-    height:30rem;
-    padding: 20vw;
+    height:35vw;
+    padding-left: 15vw;
     align-items: center;
 `
 

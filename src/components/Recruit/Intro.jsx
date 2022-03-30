@@ -12,14 +12,14 @@ const Items = [
     null,
     {
         image: "https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086088/images/light_r8uwnz.png",
-        title: "의미있는 일",
-        subTitle: ["유의미한 일을", "추구하는 인재"],
+        title: "자율과 책임",
+        subTitle: ["자기주도적으로", "업무 수행하는 인재"],
     },
     null,
     {
         image: "https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086089/images/graph_ggfo1x.png",
-        title: "개인의 성공은 회사의 성공",
-        subTitle: ["개인의 성장을", "최우선으로 하는 인재"],
+        title: "개인의 발전이 회사의 성공",
+        subTitle: ["지속적인 자기발전을", "추구하는 인재"],
     },
 ]
 

@@ -9,6 +9,7 @@ const NavbarContainer = styled.div`
     z-index: 1;
     display: flex;
     width: 100%;
+    height: 4vw;
     background-color:rgba(3, 3, 3, 0.4);
     padding-top: 1vw;
     padding-bottom: 1vw;
@@ -19,8 +20,8 @@ const NavbarContainer = styled.div`
 `
 
 const LogoContainer = styled.div`
-    width: 4.5vw;
-    height: 3vw;
+    width: 3vw;
+    /* height: 2.5vw; */
 `
 
 const UnOrderList = styled.ul`
@@ -43,27 +44,27 @@ const Navbar = () => {
             <UnOrderList>
                 <List>
                     <Link to="/">
-                        <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1.25vw">MyInfo Market</NoteSansMedium>
+                        <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1vw">MyInfo Market</NoteSansMedium>
                     </Link>
                 </List>
                 <List>
                     <Link to="/technology">
-                        <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1.25vw">Technology</NoteSansMedium>
+                        <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1vw">Technology</NoteSansMedium>
                     </Link>
                 </List>
                 <List>
                     <Link to="/service">
-                        <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1.25vw">Service</NoteSansMedium>
+                        <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1vw">Service</NoteSansMedium>
                     </Link>
                 </List>
                 <List>
                     <Link to="/company">
-                        <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1.25vw">Company</NoteSansMedium>
+                        <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1vw">Company</NoteSansMedium>
                     </Link>
                 </List>
                 <List>
                     <Link to="/recruit">
-                        <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1.25vw">Recruit</NoteSansMedium>
+                        <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1vw">Recruit</NoteSansMedium>
                     </Link>
                 </List>
             </UnOrderList>
