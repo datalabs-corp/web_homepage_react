@@ -5,6 +5,7 @@ import { PRIMARY_COLOR, WHITE_FONT_COLOR } from "../../common/color/color";
 import { GmarketBold, NoteSansMedium,} from "../../common/Text/Text";
 import Lottie from "react-lottie-player";
 
+
 import lottie1 from "./lottie_item1.json";
 import lottie3 from "./lottie_item3.json"
 
@@ -30,27 +31,36 @@ const imageData = [
     }
 ]
 
+
+
+
+
 const SlideBannerSection = styled.section`
     & .carousel .slide{
         text-align: start;
-    }
-`
-
+        /* @media (min-width: 856px) {
+                display: flex;
+                .SlideBackground {
+                    width : 100%;
+                    height : 100%;
+                }
+            } */
+        }`
+//x
 const arrowStyles = {
     position: "absolute",
     top: 'calc(50%)',
     zIndex: 2,
 }
-
+//x
 const SlideBackground = styled.div`
     display: flex;
     height: 35vw;
     justify-content: space-between;
     align-items: center;
     padding: 10vw 15vw 10vw 15vw;
-    background-image: url(${(props) => props.src});
-`
-
+    background-image: url(${(props) => props.src});`
+//x
 const KeywordStyle = styled.div`
     display: flex;
     align-items: center;
@@ -60,7 +70,7 @@ const KeywordStyle = styled.div`
     width: 10rem;
     margin: 10px;
 `
-
+//x
 const Keyword = ({ color }) => {
     return (
         <KeywordStyle color={color}>
@@ -78,6 +88,7 @@ export const MyInfoMarketSlideBanner = () => {
                     const flag = typeof image;
                     return (
                         <SlideBackground src={src}>
+                            
                             {flag !== "string" ?
                                 <>
                                 <div style={{width:"35vw"}}>
@@ -136,24 +147,25 @@ export const MyInfoMarketSlideBanner = () => {
                             subTitle={imageData[0].subTitle}
                             image={imageData[0].image}
                             alt="백그라운드 이미지" 
+                            style={{width: "100%", height: "auto", margin: "0 auto"}}
                         />
                     </div>
                     <div>
-                        <img 
-                            src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086088/images/slide_background_2_apbdo6.webp" 
+                        <img src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086088/images/slide_background_2_apbdo6.webp" 
                             title={imageData[1].title} 
                             subTitle={imageData[1].subTitle} 
                             image="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648088973/images/slide_item2_phone_pheruj.webp"
                             alt="백그라운드 이미지" 
+                            style={{width: "100%", height: "auto", margin: "0 auto"}}
                         />
                     </div>
                     <div>
-                        <img 
-                            src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086086/images/slide_background_3_flqbtm.png"
+                        <img src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086086/images/slide_background_3_flqbtm.png"
                             title={imageData[2].title} 
                             subTitle={imageData[2].subTitle} 
                             image={imageData[2].image}
                             alt="백그라운드 이미지" 
+                            style={{width: "100%", height: "auto", margin: "0 auto"}}
                         />
                     </div>
             </Carousel>

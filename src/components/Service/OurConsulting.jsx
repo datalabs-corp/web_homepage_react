@@ -37,7 +37,7 @@ const ServiceTypeColumn = styled.div`
   display: flex;
   flex-direction: column;
   flex: 5.3;
-  height: 60vh;
+  height: 45vw;
 `;
 
 const HeadRow = styled.div`
@@ -97,7 +97,7 @@ const IntroductionRows = styled.div`
 const DetailColumn = styled.div`
   flex: 7.6;
   margin-left: 0.5vw;
-  height: 60vh;
+  height: 45vw;
   display: flex;
   flex-direction: column;
 `;
