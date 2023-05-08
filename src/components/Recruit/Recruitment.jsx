@@ -282,7 +282,7 @@ export const Recruitment = () => {
         ) : (
           <DevAndPlanner job={data.developer} />
         )}
-        <div>
+        {/* <div>
           <ItemTitle>
             <NoteSansBold fontColor={PRIMARY_COLOR} fontSize={"1.5vw"}>
               근무 환경
@@ -310,7 +310,7 @@ export const Recruitment = () => {
               </NoteSansLight>
             </li>
           </UnOrderListStyle>
-        </div>
+        </div> */}
         <div>
           <ItemTitle>
             <NoteSansBold fontColor={PRIMARY_COLOR} fontSize={"1.5vw"}>
@@ -325,13 +325,13 @@ export const Recruitment = () => {
                   fontColor={DEEP_BLUE_COLOR}
                   fontSize={"1vw"}
                 >
-                  신사 
+                  신사
                 </NoteSansBold>
                 <NoteSansLight fontColor={DEEP_BLUE_COLOR} fontSize={"1vw"}>
                   서울특별시 강남구 도산대로 145 패스트파이브 3층
                 </NoteSansLight>
               </div>
-              <div style={{ margin: "1vw", width: "40rem" }}>
+              <div style={{ margin: "1vw", width: "70rem" }}>
                 <img
                   style={{ width: "70%", height: "70%" }}
                   src="../images/sinsa.png"
@@ -361,7 +361,7 @@ export const Recruitment = () => {
           </ItemTitle>
           <NoteSansLight fontColor={DEEP_BLUE_COLOR} fontSize={"1vw"}>
             이메일 (admin@data-labs.co.kr) 로 자유양식의 이력서를 보내주시면
-            빠르게 회신드리겠습니다. 
+            빠르게 회신드리겠습니다.
           </NoteSansLight>
         </div>
       </div>
