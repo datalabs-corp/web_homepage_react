@@ -13,8 +13,8 @@ const MyInfoMarket = () => {
     return (
         <>
             <MyInfoMarketSlideBanner />
-            <MyInfoMarketDescription />
             <MyInfoMarketVideo />
+            <MyInfoMarketDescription />
             <MyInfoMarketCharacteristics />
         </>
     )

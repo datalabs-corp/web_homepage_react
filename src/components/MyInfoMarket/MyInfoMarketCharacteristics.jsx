@@ -9,7 +9,7 @@ const items = [
         image: "https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086085/images/chain_kluudm.png", 
         headTitle : "진정한", 
         subTitle : "마이데이터", 
-        desciption1 : "마이 인포 마켓은 개인 정보를", 
+        desciption1 : "개인 정보를", 
         desciption2 : "본인의 디바이스에 저장하고", 
         desciption3 : "제공 이력을 관리할 수 있습니다.", 
     },
@@ -116,9 +116,9 @@ export const MyInfoMarketCharacteristics = () => {
     return (
         <CharContainer>
             <CharTitleContainer>
-                <GmarketBold fontColor={PRIMARY_COLOR} fontSize={"2.5vw"} fontWeight={"bold"}>마이 인포 마켓만의</GmarketBold>
+                <GmarketBold fontColor={PRIMARY_COLOR} fontSize={"2.5vw"} fontWeight={"bold"}>데이터랩스 블록체인 기술의</GmarketBold>
                 <GmarketBold fontColor={PRIMARY_COLOR} fontSize={"2.5vw"} fontWeight={"bold"}>3가지 특징</GmarketBold>
-                <NoteSansMedium fontColor={GREY_FONT_COLOR} fontSize={"1.4vw"} >마이 인포 마켓만의 특별한 3가지 장점을 소개합니다.</NoteSansMedium>
+                <NoteSansMedium fontColor={GREY_FONT_COLOR} fontSize={"1.4vw"} > 블록체인 기반 데이터지갑의 특별한 3가지 장점을 소개합니다.</NoteSansMedium>
             </CharTitleContainer> 
             <CharItemsContainer> 
                 {items.map((item,index) => { 
