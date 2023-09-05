@@ -1,64 +1,115 @@
 import React from "react";
 import styled from "styled-components";
-import { PRIMARY_COLOR, GREY_FONT_COLOR } from "../../common/color/color"
-import { NoteSansMedium, GmarketBold } from "../../common/Text/Text";
-// import Youtube from "react-youtube";
-
-// const youTubeOptions = styled.div`
-//     width: 100%;
-//     max-width: 858px;
-//     margin: 30pxx auto;
-//     border-radius: 30px;
-//     background-color: #f0f0f0;
-//     padding: 40px;
-//     box-sizing: border-box;
-// `
+import { PRIMARY_COLOR, GREY_FONT_COLOR } from "../../common/color/color";
+import { GmarketBold, NoteSansMedium, NoteSansLight } from "../../common/Text/Text";
 
 
-
-// const youTubeOptions = {
-//     width: '858',
-//     height: '482'
-// }
-const VideoSection = styled.section`
-    padding:6rem;
-    background-color: #F5F9FF;
+const DesciptionSection = styled.section`
+    /* background-color: white; */
+    background-color: #f0faff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    padding: 1rem;
+    @media (max-width: 720px) {
+        flex-direction: column;
+        padding: 30%;
+    }
 `
 
-const VideoContainer = styled.div`
-    display:flex;
+const DesciptionContainer = styled.section`
+    width: 50%;
+    height: 50%;
+    /* box-shadow: inset 0 -10px 10px -10px rgba(0,0,0,0.4); */
+`
+// const DescriptionText = styled.section`
+//     width: 100%;
+//     height: 100%;
+// `
+const LogoTitleContainer = styled.div`
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom:2rem;
+`
+
+const LogoTitle = styled.div`
+    display: flex;
+    align-items: center;
+`
+
+const ImageContainer = styled.div`
+    display:flex;
+    align-items:center;
+    justify-content:center;
+`
+
+const Contain = styled.div`
+    flex-direction: row;
+    justify-content: center;
+`
+const DescContainer = styled.div`
+    align-items: center;
+    justify-content: center;
+    width:"53vw";
+    text-align: center;
 `
 
 export const MyInfoMarketVideo = () => {
     return (
-        <VideoSection>
-            <VideoContainer>
-                <div style={{textAlign:"center", marginBottom:40}}>
-                    <GmarketBold fontColor={PRIMARY_COLOR} fontWeight="bold" fontSize="2.5vw">마이 인포 마켓을</GmarketBold>
-                    <GmarketBold fontColor={PRIMARY_COLOR} fontWeight="bold" fontSize="2.5vw">영상으로 만나보세요</GmarketBold>
-                    <NoteSansMedium fontColor={GREY_FONT_COLOR} fontSize="1.4vw">영상 소개</NoteSansMedium>
-                </div>
-                <div class="video">
-                    <div class="video-container">
-                        <iframe 
-                        title="YouTube video player"
-                        width="100%" 
-                        height="100%" 
-                        src="https://www.youtube.com/embed/gIkRQJbZf84?controls=0" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                        </iframe>
+        <DesciptionSection>
+            <DesciptionContainer>
+                <Contain>
+                        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+                    <LogoTitleContainer>
+                        <LogoTitle>
+                            <img style={{marginRight:"0.5rem",marginBottom:"0.5rem", marginTop:"0.5rem", width: "3vw",height: "3vw"}} src="images/tourAppLogo2.png" alt="app logo" />
+                            <img style={{marginRight:"0.5rem",marginBottom:"0.5rem", marginTop:"0.5rem", width: "12vw",height: "3vw"}} src="images/tourAppLogo.png" alt="app logo" />
+                            {/* <GmarketBold fontWeight="bold" fontColor={PRIMARY_COLOR} fontSize="2.5vw">여행대로</GmarketBold> */}
+                        </LogoTitle>
+                        <NoteSansMedium fontColor={'#25B1FA'} fontSize="1.4vw" >여행지 추천 및 여행일정 공유</NoteSansMedium>
+                    </LogoTitleContainer>
+                    <ImageContainer >
+                        <img style={{width: "20vw"}} src="images/tourAppPhone.png" alt="폰 사진"/>                     
+                    </ImageContainer>
+                    <DescContainer>
+                        {/* <div style={{width:"53vw",textAlign:"center"}}> */}
+                        <NoteSansLight fontColor={GREY_FONT_COLOR} fontSize="1.2vw">
+                        {`  여행지 검색과 일정 수립을 쉽게, 편하게,
+                            저 비용으로! 내 마음대로, 내 발길닿은 대로 나
+                            와 동행하는 여행대로!
+
+                            블록체인 기반 NFT를 활용하여 여행대로
+                            멤버쉽을 가진 여행자에게 특별한 경험을
+                            공유할 기회를 제공하는 서비스`}            
+                        </NoteSansLight>
+                        {/* </div> */}
+                    </DescContainer>
+                </Contain>
+            </DesciptionContainer>
+                {/* <div style={{width:"53vw",textAlign:"center"}}>
+                <NoteSansLight fontColor={GREY_FONT_COLOR} fontSize="1.2vw">
+                {`  여행지 검색과 일정 수립을 쉽게, 편하게,
+                    저 비용으로! 내 마음대로, 내 발길닿은 대로 나
+                    와 동행하는 여행대로!
+
+                    블록체인 기반 NFT를 활용하여 여행대로
+                    멤버쉽을 가진 여행자에게 특별한 경험을
+                    공유할 기회를 제공하는 서비스`}            
+                </NoteSansLight> */}
+                    <div style={{display: "flex", justifyContent: 'center', flexDirection: 'column'}}>
+                    <a href="https://play.google.com/store/apps/details?id=com.datatourapp" rel="noreferrer" target="_blank">
+                    <img style={{marginRight: "1rem", width: "10vw", height: "3vw"}} src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086085/images/google_button_cyoahz.png" alt="버튼1" /> 
+                    </a>
+                    <a href="https://itunes.apple.com/app/id6458978344" rel="noreferrer" target="_blank">
+                    <img style={{marginTop: "10px",marginRight: "1rem", width: "10vw", height: "3vw"}} src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086087/images/apple_button_dsxirk.png" alt="버튼2" />
+                    </a>
                     </div>
-                </div>
-                {/* <Youtube
-                    videoId="gIkRQJbZf84"
-                    opts={youTubeOptions}
-                /> */}
-            </VideoContainer>
-        </VideoSection>
+                    {/* </div>  */}
+                </DesciptionSection>
     )
 }
+
