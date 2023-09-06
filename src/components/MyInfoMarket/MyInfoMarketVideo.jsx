@@ -41,6 +41,11 @@ const LogoTitle = styled.div`
     align-items: center;
 `
 
+const TourAppTextStyle = styled.text`
+    color: #25B1FA;
+    text-align: center;
+    font-size: 1.4vw;
+`;
 const ImageContainer = styled.div`
     display:flex;
     align-items:center;
@@ -70,7 +75,7 @@ export const MyInfoMarketVideo = () => {
                             <img style={{marginRight:"0.5rem",marginBottom:"0.5rem", marginTop:"0.5rem", width: "12vw",height: "3vw"}} src="images/tourAppLogo.png" alt="app logo" />
                             {/* <GmarketBold fontWeight="bold" fontColor={PRIMARY_COLOR} fontSize="2.5vw">여행대로</GmarketBold> */}
                         </LogoTitle>
-                        <NoteSansMedium fontColor={'#25B1FA'} fontSize="1.4vw" >여행지 추천 및 여행일정 공유</NoteSansMedium>
+                        <TourAppTextStyle>여행지 추천 및 여행일정 공유</TourAppTextStyle>
                     </LogoTitleContainer>
                     <ImageContainer >
                         <img style={{width: "20vw"}} src="images/tourAppPhone.png" alt="폰 사진"/>                     
