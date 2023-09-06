@@ -48,13 +48,13 @@ const LogoTitleContainer = styled.div`
     justify-content: center;
     align-items: center;
     margin-bottom:2rem;
-`
+`;
 
 const LogoTitle = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-`
+`;
 
 const YouTubeContainer = styled.div`
 display:flex;
@@ -65,7 +65,7 @@ const ImageContainer = styled.div`
     display:flex;
     align-items:center;
     justify-content:center;
-`
+`;
 
 export const MyInfoMarketDescription = () => {
     return (
@@ -77,7 +77,7 @@ export const MyInfoMarketDescription = () => {
                         <img style={{marginRight:"0.5rem",marginBottom:"0.5rem", marginTop:"0.5rem", width: "3vw",height: "3vw"}} src="images/app_logo.png" alt="app logo" />
                         <GmarketBold fontWeight="bold" fontColor={PRIMARY_COLOR} fontSize="2.5vw">마이 인포 마켓</GmarketBold>
                     </LogoTitle>
-                    <MyInfoMarketDesc>개인 정보를 디지털 자산화 합니다.</MyInfoMarketDesc>
+                    <MyInfoMarketDesc>개인 정보를 디지털 자산화 합니다.</MyInfoMarketDesc> 
                 </LogoTitleContainer>
                 <ImageContainer >
                     <img style={{width: "20vw"}} src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086089/images/my_info_phone_drqbjm.webp" alt="폰 사진"/>                     
