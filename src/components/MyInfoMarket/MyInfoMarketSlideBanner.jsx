@@ -92,7 +92,7 @@ export const MyInfoMarketSlideBanner = () => {
                             {flag !== "string" ?
                                 <>
                                 <div style={{width:"35vw"}}>
-                                    <Keyword color={WHITE_FONT_COLOR}/>
+                                    {/* <Keyword color={WHITE_FONT_COLOR}/> */}
                                     <GmarketBold fontColor={WHITE_FONT_COLOR} fontSize={"3vw"}>{title}</GmarketBold>
                                     <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontSize={"1vw"}>{subTitle}</NoteSansMedium>
                                 </div>
@@ -104,7 +104,7 @@ export const MyInfoMarketSlideBanner = () => {
                             :
                             <>  
                                 <div style={{width:"35vw"}}>
-                                    <Keyword color={PRIMARY_COLOR}/>
+                                    {/* <Keyword color={PRIMARY_COLOR}/> */}
                                     <GmarketBold fontColor={PRIMARY_COLOR} fontSize={"3vw"}>{title}</GmarketBold>
                                     <NoteSansMedium fontColor={PRIMARY_COLOR} fontSize={"1vw"}>{subTitle}</NoteSansMedium>
                                 </div>
