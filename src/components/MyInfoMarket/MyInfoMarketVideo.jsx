@@ -49,24 +49,24 @@ const LogoTitle = styled.div`
     display: flex;
     align-items: center;
     justify-content:center;
-`
+`;
 
 const ImageContainer = styled.div`
     display:flex;
     align-items:center;
     justify-content:center;
-`
+`;
 
 const Contain = styled.div`
     flex-direction: row;
     justify-content: center;
-`
+`;
 const DescContainer = styled.div`
     align-items: center;
     justify-content: center;
     width:"53vw";
     text-align: center;
-`
+`;
 
 export const MyInfoMarketVideo = () => {
     return (
