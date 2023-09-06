@@ -55,6 +55,10 @@ const CharContainer = styled.section`
 
 const CharTitleContainer = styled.div`
     text-align: center;
+    margin-bottom: 5rem;
+    @media (max-width: 720px){
+        margin-bottom: 2rem;
+    }
 `
 
 
@@ -62,7 +66,7 @@ const CharItemsContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 7rem;
+    margin-top: 3.5rem;
     @media (max-width: 720px){
         flex-direction: column;
     }
@@ -118,7 +122,7 @@ export const MyInfoMarketCharacteristics = () => {
             <CharTitleContainer>
                 <GmarketBold fontColor={PRIMARY_COLOR} fontSize={"2.5vw"} fontWeight={"bold"}>데이터랩스 블록체인 기술의</GmarketBold>
                 <GmarketBold fontColor={PRIMARY_COLOR} fontSize={"2.5vw"} fontWeight={"bold"}>3가지 특징</GmarketBold>
-                <NoteSansMedium fontColor={GREY_FONT_COLOR} fontSize={"1.4vw"} > 블록체인 기반 데이터지갑의 특별한 3가지 장점을 소개합니다.</NoteSansMedium>
+                <NoteSansMedium fontColor={GREY_FONT_COLOR} fontSize={"1.4vw"}> 블록체인 기반 데이터지갑의 특별한 3가지 장점을 소개합니다.</NoteSansMedium>
             </CharTitleContainer> 
             <CharItemsContainer> 
                 {items.map((item,index) => { 
