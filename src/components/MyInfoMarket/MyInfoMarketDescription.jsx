@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { PRIMARY_COLOR, GREY_FONT_COLOR } from "../../common/color/color";
 import { GmarketBold, NoteSansMedium, NoteSansLight } from "../../common/Text/Text";
 const VideoSection = styled.section`
-    padding:1rem;
+    /* padding:1rem; */
     /* background-color: #F5F9FF; */
 `
 
@@ -21,16 +21,12 @@ const DesciptionSection = styled.section`
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    padding: 1rem;
-    margin-bottom: 4rem;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
     @media (max-width: 720px) {
         flex-direction: column;
         padding: 30%;
     }
-`
-const ButtonContainer = styled.div`
-    flex-direction: column;
-    align-items: center;
 `
 
 const DesciptionContainer = styled.section`
@@ -49,7 +45,14 @@ const LogoTitleContainer = styled.div`
     align-items: center;
     margin-bottom:2rem;
 `
-
+const MyInfoMarketDesc = styled.text`
+    color: #0D00AA;
+    font-size: "1.0vw";
+    text-align: center;
+    @media (max-width: 720px) {
+        font-size: "0.5vw";
+    }
+`;
 const LogoTitle = styled.div`
     display: flex;
     align-items: center;
@@ -72,7 +75,7 @@ export const MyInfoMarketDescription = () => {
                         <img style={{marginRight:"0.5rem",marginBottom:"0.5rem", marginTop:"0.5rem", width: "3vw",height: "3vw"}} src="images/app_logo.png" alt="app logo" />
                         <GmarketBold fontWeight="bold" fontColor={PRIMARY_COLOR} fontSize="2.5vw">마이 인포 마켓</GmarketBold>
                     </LogoTitle>
-                    <NoteSansMedium fontColor={PRIMARY_COLOR} fontSize="1.4vw" >개인 정보를 디지털 자산화 합니다.</NoteSansMedium>
+                    <MyInfoMarketDesc>개인 정보를 디지털 자산화 합니다.</MyInfoMarketDesc>
                 </LogoTitleContainer>
                 <ImageContainer >
                     <img style={{width: "20vw"}} src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086089/images/my_info_phone_drqbjm.webp" alt="폰 사진"/>                     
@@ -88,16 +91,16 @@ export const MyInfoMarketDescription = () => {
                             {/* <GmarketBold fontColor={PRIMARY_COLOR} fontWeight="bold" fontSize="2.5vw">영상으로 만나보세요</GmarketBold> */}
                             {/* <NoteSansMedium fontColor={GREY_FONT_COLOR} fontSize="1.2vw">영상 소개</NoteSansMedium> */}
                             <NoteSansLight fontColor={GREY_FONT_COLOR} fontSize="0.8vw">
-                    {`마이인포 마켓은 세계 최초의 블록체인 기반
-                    개인 데이터 마켓 플랫폼입니다.`}
-                    </NoteSansLight>  
+                                {`마이인포 마켓은 세계 최초의 블록체인 기반
+                                개인 데이터 마켓 플랫폼입니다.`}
+                            </NoteSansLight>  
                         </div>
                         <div class="video">
                             <div class="video-container">
                                 <iframe 
                                     title="YouTube video player"
-                                    width="450px" 
-                                    height="450px" 
+                                    width="200px" 
+                                    height="200px" 
                                     // showinfo="0"
                                     src="https://www.youtube.com/embed/gIkRQJbZf84?controls=0" 
                                     frameborder="0" 
@@ -119,10 +122,10 @@ export const MyInfoMarketDescription = () => {
                 </NoteSansLight>
                     <div style={{marginTop:"20px", display: "flex", justifyContent: 'center', flexDirection: 'column'}}>
                     <a href="https://play.google.com/store/apps/details?id=com.onedaydemo" rel="noreferrer" target="_blank">
-                    <img style={{marginRight: "1rem", width: "10vw", height: "3vw"}} src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086085/images/google_button_cyoahz.png" alt="버튼1" /> 
+                    <img style={{width: "10vw", height: "3vw"}} src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086085/images/google_button_cyoahz.png" alt="버튼1" /> 
                     </a>
                     <a href="https://apps.apple.com/us/app/%EB%A7%88%EC%9D%B4%EC%9D%B8%ED%8F%AC%EB%A7%88%EC%BC%93/id1612552713" rel="noreferrer" target="_blank">
-                    <img style={{marginTop: "10px",marginRight: "1rem", width: "10vw", height: "3vw"}} src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086087/images/apple_button_dsxirk.png" alt="버튼2" />
+                    <img style={{marginTop: "10px",width: "10vw", height: "3vw"}} src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086087/images/apple_button_dsxirk.png" alt="버튼2" />
                     </a>
                     </div>
                     </div> 
