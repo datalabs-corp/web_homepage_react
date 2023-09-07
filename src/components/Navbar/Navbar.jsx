@@ -122,7 +122,7 @@ const Navbar = () => {
                 <MenuBtn onClick={() => openSlider()}>
                     <AiOutlineMenu size={'100%'}/> 
                 </MenuBtn>
-                {/* <List>
+                <List>
                     <Link to="/">
                         <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1vw">MyInfo Market</NoteSansMedium>
                     </Link>
@@ -146,9 +146,9 @@ const Navbar = () => {
                     <Link to="/recruit">
                         <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1vw">Recruit</NoteSansMedium>
                     </Link>
-                </List> */}
+                </List>
 
-                <List>
+                {/* <List>
                     <a href="/">
                         <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1vw">MyInfo Market</NoteSansMedium>
                     </a>
@@ -172,7 +172,7 @@ const Navbar = () => {
                     <a href="/recruit">
                         <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1vw">Recruit</NoteSansMedium>
                     </a>
-                </List>
+                </List> */}
             </UnOrderList>
         </NavbarContainer>
         </>
