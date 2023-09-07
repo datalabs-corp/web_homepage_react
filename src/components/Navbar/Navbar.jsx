@@ -5,8 +5,6 @@ import { WHITE_FONT_COLOR } from "../../common/color/color";
 import { NoteSansMedium } from "../../common/Text/Text";
 import { AiOutlineMenu } from "react-icons/ai";
 
-
-
 const NavbarContainer = styled.div`
     position: fixed;
     z-index: 1;
@@ -108,7 +106,7 @@ const Navbar = () => {
                 <MenuUl>
                     <li><Link to="/">My Info Market</Link></li>
                     <li><Link to="/technology">Technology</Link></li>
-                    <li><Link to="/service">Sevice</Link></li>
+                    <li><Link to="/service">Service</Link></li>
                     <li><Link to="/company">Company</Link></li>
                 </MenuUl>
                 <MenuUl>
@@ -124,7 +122,7 @@ const Navbar = () => {
                 <MenuBtn onClick={() => openSlider()}>
                     <AiOutlineMenu size={'100%'}/> 
                 </MenuBtn>
-                <List>
+                {/* <List>
                     <Link to="/">
                         <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1vw">MyInfo Market</NoteSansMedium>
                     </Link>
@@ -148,6 +146,32 @@ const Navbar = () => {
                     <Link to="/recruit">
                         <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1vw">Recruit</NoteSansMedium>
                     </Link>
+                </List> */}
+
+                <List>
+                    <a href="/">
+                        <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1vw">MyInfo Market</NoteSansMedium>
+                    </a>
+                </List>
+                <List>
+                    <a href="/technology">
+                        <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1vw">Technology</NoteSansMedium>
+                    </a>
+                </List>
+                <List>
+                    <a href="/service">
+                        <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1vw">Service</NoteSansMedium>
+                    </a>
+                </List>
+                <List>
+                    <a href="/company">
+                        <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1vw">Company</NoteSansMedium>
+                    </a>
+                </List>
+                <List>
+                    <a href="/recruit">
+                        <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1vw">Recruit</NoteSansMedium>
+                    </a>
                 </List>
             </UnOrderList>
         </NavbarContainer>
