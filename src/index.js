@@ -19,11 +19,11 @@ ReactDOM.render(
   <Router>
     <Navbar />
     <Routes>
-      <Route path="/" Component={<MyInfoMarket />} />
-      <Route path="/technology" Component={<Technology />} />
-      <Route path="/service" Component={<Service />} />
-      <Route path="/company" Component={<Company />} />
-      <Route path="/recruit" Component={<Recruit />} />
+      <Route path="/" Component={MyInfoMarket} />
+      <Route path="/technology" Component={Technology} />
+      <Route path="/service" Component={Service} />
+      <Route path="/company" Component={Company} />
+      <Route path="/recruit" Component={Recruit} />
     </Routes>
     <Footer />
   </Router>,
