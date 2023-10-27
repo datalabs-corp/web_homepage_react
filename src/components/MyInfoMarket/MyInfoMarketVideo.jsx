@@ -144,6 +144,20 @@ export const MyInfoMarketVideo = () => {
                                 </iframe>
                             </div>
                         </div>
+                        <div class="video" style={{marginTop: 10}}>
+                            <div class="video-container">
+                                <iframe  
+                                    title="YouTube video player"
+                                    width="400px" 
+                                    height="250px" 
+                                    // showinfo="0"
+                                    src="https://www.youtube.com/embed/FhQcip0Mfns?si=rW3qMZiXMwi-xFvm"
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
                     </VideoContainer>
                 </VideoSection>   
                 <div>
