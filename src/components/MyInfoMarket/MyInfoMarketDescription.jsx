@@ -20,8 +20,9 @@ const DesciptionSection = styled.section`
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+
     align-items: center;
-    padding: 1rem 1rem;
+    padding: 3rem 1rem;
     margin-bottom: 1rem;
     @media (max-width: 720px) {
         flex-direction: column;
@@ -99,8 +100,8 @@ export const MyInfoMarketDescription = () => {
                             <div class="video-container">
                                 <iframe 
                                     title="YouTube video player"
-                                    width="200px" 
-                                    height="200px" 
+                                    width="400px" 
+                                    height="250px" 
                                     // showinfo="0"
                                     src="https://www.youtube.com/embed/gIkRQJbZf84?controls=0" 
                                     frameborder="0" 
@@ -120,12 +121,12 @@ export const MyInfoMarketDescription = () => {
                     중앙서버 DB에 저장했던 기존 데이터 시스템보다
                     개인 데이터 보호가 강화됩니다.`}            
                 </NoteSansLight>
-                    <div style={{marginTop:"20px", display: "flex", justifyContent: 'center', flexDirection: 'column'}}>
+                    <div style={{marginTop:"20px", display: "flex", justifyContent: 'center', flexDirection: 'row', alignItems: 'center'}}>
                     <a href="https://play.google.com/store/apps/details?id=com.onedaydemo" rel="noreferrer" target="_blank">
                     <img style={{width: "10vw", height: "3vw"}} src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086085/images/google_button_cyoahz.png" alt="버튼1" /> 
                     </a>
                     <a href="https://apps.apple.com/us/app/%EB%A7%88%EC%9D%B4%EC%9D%B8%ED%8F%AC%EB%A7%88%EC%BC%93/id1612552713" rel="noreferrer" target="_blank">
-                    <img style={{marginTop: "10px",width: "10vw", height: "3vw"}} src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086087/images/apple_button_dsxirk.png" alt="버튼2" />
+                    <img style={{marginLeft: "1vw",width: "10vw", height: "3vw"}} src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086087/images/apple_button_dsxirk.png" alt="버튼2" />
                     </a>
                     </div>
                     </div> 

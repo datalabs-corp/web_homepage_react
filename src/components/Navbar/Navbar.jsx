@@ -96,6 +96,17 @@ const Navbar = () => {
     const closeSlider = () => {
         setOpenToggle(false);
     }
+    const [optLanguage, setOptLanguage] = useState('Korea');
+
+
+    const ChangeToEnglish = () => {
+        setOptLanguage('English');
+        
+    }
+    const ChangeToKorea = () => {
+        setOptLanguage('Korea');
+    }    
+
     return (
         <>
         <Background
@@ -119,6 +130,14 @@ const Navbar = () => {
                 <img src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086088/images/company__logo_a32s9l.png" alt="회사 로고" style={{width:"100%", height:"100%"}}/>
             </LogoContainer>
             <UnOrderList>
+            {/* <div>
+                <button onClick={ChangeToEnglish}>
+                    English
+                </button>
+                <button style={{marginLeft: 10}}onClick={ChangeToKorea}>
+                    Korea
+                </button>
+            </div> */}
                 <MenuBtn onClick={() => openSlider()}>
                     <AiOutlineMenu size={'100%'}/> 
                 </MenuBtn>

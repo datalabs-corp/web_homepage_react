@@ -30,27 +30,6 @@ const imageData = [
         image: lottie3,
     }
 ]
-const imageDataEnglish = [
-    {
-        title: `Because it's MyData 
-        I take care of it myself!`,
-        subTitle: `The sovereignty of my information is myself, not the data holder!`,
-        image: lottie1,
-    },
-    {   
-        title: `My Info is 
-        Save to My Device!`,
-        subTitle: `It's not a central server DB, but my phone
-        Save My Info to make it safer!`,
-        image: lottie1,
-    },
-    {
-        title: `With blockchain technology
-        More reliable information!`,
-        subTitle: `Leveraging blockchain for more transparent management of my data`,
-        image: lottie3,
-    }
-]
 
 
 const SlideBannerSection = styled.section`
@@ -98,18 +77,18 @@ const Keyword = ({ color }) => {
 }
 
 export const MyInfoMarketSlideBanner = () => {
-    const [optLanguage, setOptLanguage] = useState('Korea');
+
 
 
     return (
         <SlideBannerSection>
-            {optLanguage === "Korea" ? (
             <Carousel 
                 renderItem={(item) => {
                     const { src, title, subTitle, image } = item.props.children.props;
                     const flag = typeof image;
                     return (
                         <SlideBackground src={src}>
+                            
                             {flag !== "string" ?
                                 <>
                                 <div style={{width:"35vw"}}>
@@ -190,94 +169,6 @@ export const MyInfoMarketSlideBanner = () => {
                         />
                     </div>
             </Carousel>
-            ) : (
-                <Carousel 
-                renderItem={(item) => {
-                    const { src, title, subTitle, image } = item.props.children.props;
-                    const flag = typeof image;
-                    return (
-                        <SlideBackground src={src}>
-                            {flag !== "string" ?
-                                <>
-                                <div style={{width:"35vw"}}>
-                                    {/* <Keyword color={WHITE_FONT_COLOR}/> */}
-                                    <GmarketBold fontColor={WHITE_FONT_COLOR} fontSize={"3vw"}>{title}</GmarketBold>
-                                    <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontSize={"1vw"}>{subTitle}</NoteSansMedium>
-                                </div>
-                                <div style={{width:"50%"}}>
-                                    <Lottie animationData={image} play loop></Lottie>
-                                </div>
-                                </>
-                                
-                            :
-                            <>  
-                                <div style={{width:"35vw"}}>
-                                    {/* <Keyword color={PRIMARY_COLOR}/> */}
-                                    <GmarketBold fontColor={PRIMARY_COLOR} fontSize={"3vw"}>{title}</GmarketBold>
-                                    <NoteSansMedium fontColor={PRIMARY_COLOR} fontSize={"1vw"}>{subTitle}</NoteSansMedium>
-                                </div>
-                                <div style={{width:"50%"}}>
-                                    <img style={{width:"100%", height:"100%"}} src={image} alt="두번째 아이템" />
-                                </div>
-                            </>
-                            }
-                        </SlideBackground>
-                    )
-                }}
-                renderArrowPrev={(onClickHandler, hasPrev, label) => {
-                    return (<div
-                        onClick={onClickHandler}
-                        style={{
-                            ...arrowStyles,
-                            left: "10vw",
-                            width: "1vw",
-                        }} ><img src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086085/images/left_arrow_qu9a0j.png" alt="왼쪽 화살표"/></div>)
-                }}
-                renderArrowNext={(onClickHandler, hasPrev, label) => {
-                    return (<div 
-                        type="button" 
-                        onClick={onClickHandler}
-                        style={{
-                            ...arrowStyles,
-                            right: "10vw",
-                            width: "1vw",
-                        }} ><img src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086086/images/right_arrow_zmp3ut.png" alt="오른쪽 화살표"/></div>)
-                    }}
-                    showThumbs={false}
-                    renderIndicator={false}
-                    infiniteLoop={true}
-                    autoPlay={true}
-                >
-                    <div>
-                        <img 
-                            src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086086/images/slide_background_1_f0bivy.png" 
-                            title={imageDataEnglish[0].title} 
-                            subTitle={imageDataEnglish[0].subTitle}
-                            image={imageData[0].image}
-                            alt="백그라운드 이미지" 
-                            style={{width: "100%", height: "auto", margin: "0 auto"}}
-                        />
-                    </div>
-                    <div>
-                        <img src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086088/images/slide_background_2_apbdo6.webp" 
-                            title={imageDataEnglish[1].title} 
-                            subTitle={imageDataEnglish[1].subTitle} 
-                            image="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648088973/images/slide_item2_phone_pheruj.webp"
-                            alt="백그라운드 이미지" 
-                            style={{width: "100%", height: "auto", margin: "0 auto"}}
-                        />
-                    </div>
-                    <div>
-                        <img src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086086/images/slide_background_3_flqbtm.png"
-                            title={imageDataEnglish[2].title} 
-                            subTitle={imageDataEnglish[2].subTitle} 
-                            image={imageData[2].image}
-                            alt="백그라운드 이미지" 
-                            style={{width: "100%", height: "auto", margin: "0 auto"}}
-                        />
-                    </div>
-            </Carousel>
-            ) }
         </SlideBannerSection>
     )
 }

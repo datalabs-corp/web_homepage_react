@@ -4,6 +4,7 @@ import { MyInfoMarketSlideBanner } from "./MyInfoMarketSlideBanner";
 import { MyInfoMarketDescription } from "./MyInfoMarketDescription";
 import { MyInfoMarketVideo } from "./MyInfoMarketVideo";
 import { MyInfoMarketCharacteristics } from "./MyInfoMarketCharacteristics";
+import {MyInfoMarketBlog} from "./MyInfoMarketBlog";
 
 
 const MyInfoMarket = () => {
@@ -13,6 +14,7 @@ const MyInfoMarket = () => {
     return (
         <>
             <MyInfoMarketSlideBanner />
+            {/* <MyInfoMarketBlog /> */}
             <MyInfoMarketVideo />
             <MyInfoMarketDescription />
             <MyInfoMarketCharacteristics />
