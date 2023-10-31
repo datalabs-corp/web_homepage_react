@@ -51,8 +51,6 @@ const imageDataEnglish = [
         image: lottie3,
     }
 ]
-
-
 const SlideBannerSection = styled.section`
     & .carousel .slide{
         text-align: start;

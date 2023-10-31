@@ -24,6 +24,17 @@ const IconContainer = styled.div`
   height: 2.4vw;
   border-radius: 1.2vw;
   background-color: #cbcbcb;
+  background-color: black;
+  margin-right: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+const IconContainerTwo = styled.div`
+  width: 2.4vw;
+  height: 2.4vw;
+  border-radius: 1.2vw;
+  background-color: #cbcbcb;
   margin-right: 1vw;
   display: flex;
   justify-content: center;
@@ -60,6 +71,19 @@ const Footer = () => {
         </div>
       </FooterDescription>
       <div style={{ display: "flex" }}>
+      <a
+          href="https://www.facebook.com/My-info-market-100401495996682/"
+          target={"_blank"}
+          rel="noreferrer"
+        >
+          <IconContainer>
+            <img
+              src="../images/logo_facebook.png"
+              alt="facebook-logo"
+              width="100%"
+            />
+          </IconContainer>
+        </a>
         <a
           href="https://www.instagram.com/my_info_market/?hl=ko"
           target={"_blank"}
@@ -69,7 +93,20 @@ const Footer = () => {
             <img
               src="../images/logo_instagram.png"
               alt="instagram-logo"
-              width="60%"
+              width="100%"
+            />
+          </IconContainer>
+        </a>
+        <a
+          href="https://www.youtube.com/channel/UCcGJ1KLpOW3xrw2OwTowRFg"
+          target={"_blank"}
+          rel="noreferrer"
+        >
+          <IconContainer>
+            <img
+              src="../images/logo_youtube.png"
+              alt="youtube-logo"
+              width="100%"
             />
           </IconContainer>
         </a>
@@ -87,40 +124,13 @@ const Footer = () => {
               }}
             >
               <img
-                src="../images/logo_naver_cafe.png"
+                src="../images/logo_naver_blog.png"
                 alt="blog-logo"
-                width="60%"
+                width="100%"
               />
             </div>
           </IconContainer>
         </a>
-        <a
-          href="https://www.facebook.com/My-info-market-100401495996682/"
-          target={"_blank"}
-          rel="noreferrer"
-        >
-          <IconContainer>
-            <img
-              src="../images/logo_facebook.png"
-              alt="facebook-logo"
-              width="60%"
-            />
-          </IconContainer>
-        </a>
-        <a
-          href="https://www.youtube.com/channel/UCcGJ1KLpOW3xrw2OwTowRFg"
-          target={"_blank"}
-          rel="noreferrer"
-        >
-          <IconContainer>
-            <img
-              src="../images/logo_youtube.png"
-              alt="youtube-logo"
-              width="60%"
-            />
-          </IconContainer>
-        </a>
-
         <NoteSansMedium fontColor={GREY_FONT_COLOR} fontSize="1.1vw">
           COPYRIGHT &copy; 2022 DATALABS ALL RIGHT RESERVED
         </NoteSansMedium>

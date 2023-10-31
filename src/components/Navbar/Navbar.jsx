@@ -130,14 +130,6 @@ const Navbar = () => {
                 <img src="https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086088/images/company__logo_a32s9l.png" alt="회사 로고" style={{width:"100%", height:"100%"}}/>
             </LogoContainer>
             <UnOrderList>
-            {/* <div>
-                <button onClick={ChangeToEnglish}>
-                    English
-                </button>
-                <button style={{marginLeft: 10}}onClick={ChangeToKorea}>
-                    Korea
-                </button>
-            </div> */}
                 <MenuBtn onClick={() => openSlider()}>
                     <AiOutlineMenu size={'100%'}/> 
                 </MenuBtn>
@@ -166,32 +158,6 @@ const Navbar = () => {
                         <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1vw">Recruit</NoteSansMedium>
                     </Link>
                 </List>
-
-                {/* <List>
-                    <a href="/">
-                        <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1vw">MyInfo Market</NoteSansMedium>
-                    </a>
-                </List>
-                <List>
-                    <a href="/technology">
-                        <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1vw">Technology</NoteSansMedium>
-                    </a>
-                </List>
-                <List>
-                    <a href="/service">
-                        <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1vw">Service</NoteSansMedium>
-                    </a>
-                </List>
-                <List>
-                    <a href="/company">
-                        <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1vw">Company</NoteSansMedium>
-                    </a>
-                </List>
-                <List>
-                    <a href="/recruit">
-                        <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1vw">Recruit</NoteSansMedium>
-                    </a>
-                </List> */}
             </UnOrderList>
         </NavbarContainer>
         </>
