@@ -23,23 +23,23 @@ const IconContainer = styled.div`
   width: 2.4vw;
   height: 2.4vw;
   border-radius: 1.2vw;
-  background-color: #cbcbcb;
+  /* background-color: #cbcbcb; */
   background-color: black;
   margin-right: 1vw;
   display: flex;
   justify-content: center;
   align-items: center;
 `;
-const IconContainerTwo = styled.div`
-  width: 2.4vw;
-  height: 2.4vw;
-  border-radius: 1.2vw;
-  background-color: #cbcbcb;
-  margin-right: 1vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
+// const IconContainerTwo = styled.div`
+//   width: 2.4vw;
+//   height: 2.4vw;
+//   border-radius: 1.2vw;
+//   background-color: #cbcbcb;
+//   margin-right: 1vw;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// `;
 
 const Footer = () => {
   return (
