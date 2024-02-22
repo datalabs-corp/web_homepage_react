@@ -325,17 +325,17 @@ export const Recruitment = () => {
                   fontColor={DEEP_BLUE_COLOR}
                   fontSize={"1vw"}
                 >
-                  신사
+                  영등포
                 </NoteSansBold>
                 <NoteSansLight fontColor={DEEP_BLUE_COLOR} fontSize={"1vw"}>
-                  서울특별시 강남구 도산대로 145 패스트파이브 3층
+                  서울특별시  영등포구 의사당대로 83, 서울핀테크랩 8-112호
                 </NoteSansLight>
               </div>
               <div style={{ margin: "1vw", width: "70rem" }}>
                 <img
                   style={{ width: "70%", height: "70%" }}
-                  src="../images/sinsa.png"
-                  alt="신사지점 지도"
+                  src="../images/yeongdeungpo.png"
+                  alt="영등포지점 지도"
                   //alt="신논현지점 지도"
                 />
               </div>

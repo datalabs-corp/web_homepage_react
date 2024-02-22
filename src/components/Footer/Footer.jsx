@@ -63,7 +63,7 @@ const Footer = () => {
         </div>
         <div>
           <NoteSansMedium fontColor={GREY_FONT_COLOR} fontSize="1.1vw">
-            서울특별시 강남구 도산대로 145 패스트파이브 3층
+            서울특별시  영등포구 의사당대로 83, 서울핀테크랩 8-112호
           </NoteSansMedium>
           <NoteSansMedium fontColor={GREY_FONT_COLOR} fontSize="1.1vw">
             문의 : admin@data-labs.co.kr
