@@ -108,7 +108,7 @@ export const MyInfoMarketVideo = () => {
                             <img style={{marginRight:"0.5rem",marginBottom:"0.5rem", marginTop:"0.5rem", width: "12vw",height: "3vw", alignItems:"center"}} src="images/tourAppLogo.png" alt="app logo" />
                             {/* <GmarketBold fontWeight="bold" fontColor={PRIMARY_COLOR} fontSize="2.5vw">여행대로</GmarketBold> */}
                         </LogoTitle>
-                    <TourAppDesc>여행지 추천 및 여행일정 공유</TourAppDesc>
+                    <TourAppDesc>당일치기 여행과 NFT 저장</TourAppDesc>
                     </LogoTitleContainer>
                     <ImageContainer >
                         <img style={{width: "20vw"}} src="images/tourAppPhone.png" alt="폰 사진"/>                     
@@ -163,7 +163,7 @@ export const MyInfoMarketVideo = () => {
                 <div>
                     <DescContainer>
                         <NoteSansLight fontColor={GREY_FONT_COLOR} fontSize="1.2vw">
-                        {`  여행지 검색과 일정 수립을 쉽게, 편하게,
+                        {`  여행 당일치기 모집과 일정수립을 쉽고, 편하게
                             저 비용으로! 내 마음대로, 내 발길닿은 대로 
                             나와 동행하는 여행대로!
 
