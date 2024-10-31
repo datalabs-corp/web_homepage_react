@@ -2,12 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import { GmarketBold, NoteSansLight } from "../../common/Text/Text";
 import { WHITE_FONT_COLOR } from "../../common/color/color";
-import { Intro } from "./Intro";
+import { Intro } from "./PreTraining";
 
 const BannerContainer = styled.div`
     display: flex;
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(17, 39, 97, 0.3)), url("https://res.cloudinary.com/dz7lhzjdh/image/upload/v1648086088/images/technology_background_pmlptc.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(17, 39, 97, 0.3)), url("https://i.imgur.com/GbaUcIw.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     height:35vw;
@@ -19,14 +19,26 @@ export const Banner = () => {
     return (
         <BannerContainer>
             <div>
-                <GmarketBold fontColor={WHITE_FONT_COLOR} fontWeight={"bold"} fontSize={"2.8vw"}>Technology</GmarketBold>
-                <NoteSansLight fontColor={WHITE_FONT_COLOR} fontSize={"1.2vw"}>차별화 된 블록체인 플랫폼, 데이터체인</NoteSansLight>
+                <GmarketBold
+                    fontColor={WHITE_FONT_COLOR}
+                    fontWeight={"bold"}
+                    fontSize={"2.8vw"}
+                >
+                    LLM Pre-Training
+                </GmarketBold>
+                <NoteSansLight fontColor={WHITE_FONT_COLOR} fontSize={"1.2vw"}>
+                    차별화된 LLM Pre-Training, 데이터체인
+                </NoteSansLight>
             </div>
-            <div style={{position: "absolute", right: "10vw"}}>
-                <GmarketBold fontColor={WHITE_FONT_COLOR} fontSize={"17.5vw"} styles={{opacity: 0.15}}>Tech</GmarketBold>
-                <GmarketBold fontColor={WHITE_FONT_COLOR} fontSize={"17.5vw"} styles={{opacity: 0.15}}>-nology</GmarketBold>
+            <div style={{ position: "absolute", left: "10rem", bottom: "0rem" }}>
+                <GmarketBold
+                fontColor={WHITE_FONT_COLOR}
+                fontSize={"13vw"}
+                styles={{ opacity: 0.15 }}
+                >
+                    Pre-training
+                </GmarketBold>
             </div>
-            <Intro />
         </BannerContainer>
     )
 }
