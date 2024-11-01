@@ -37,6 +37,8 @@ const List = styled.li`
     cursor: pointer;
     padding-left:2.5vw ;
     padding-right: 2.5vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
     @media (max-width: 720px) {
         display: none;
     }
@@ -83,12 +85,47 @@ const MenuUl = styled.ul`
         color: #000;
     }
 `;
+const DropDownItems = styled.div`
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+    padding: 10px 0px;
+    margin-top: 5px;
+`
+const DropDownItem = styled.div`
+    display: block;
+    padding: 10px 15px;
+`
+const DropDownTitle = styled.a`
+    display: block;
+    text-decoration: none;
+    color: #fff;
+`
+const DropDownMenu = styled.div`
+    display: inline-block;
+    position: relative;
+    padding-left:2.5vw ;
+    padding-right: 2.5vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    &:hover > ${DropDownItems} {
+        display: block;
+        background-clip: padding-box;
+    }
+`;
+// .menu > li:hover .dropdown-content {
+//   display: block;
+// }
+
 // const MenuLi = styled.li`
 //     display: flex;
 //     justify-content: center;
 // `;
 
-const Navbar = () => {
+const NavbarLayout = () => {
     const [openToggle, setOpenToggle] = useState(false);
     const openSlider = () => {
         setOpenToggle(true);
@@ -134,20 +171,34 @@ const Navbar = () => {
                     <AiOutlineMenu size={'100%'}/> 
                 </MenuBtn>
                 <List>
-                    <Link to="/">
-                        <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1vw">MyInfo Market</NoteSansMedium>
-                    </Link>
-                </List>
-                <List>
-                    <Link to="/technology">
-                        <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1vw">Technology</NoteSansMedium>
-                    </Link>
-                </List>
-                <List>
-                    <Link to="/service">
+                    <Link to="/" styles={{height: '30px', display: "content"}}>
                         <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1vw">Service</NoteSansMedium>
                     </Link>
                 </List>
+                {/* <List>
+                    <Link to="/technology">
+                        <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1vw">Technology</NoteSansMedium>
+                    </Link>
+                </List> */}
+                <DropDownMenu>
+                    <DropDownTitle>
+                        <Link to="/technology">
+                            <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1vw">Technology</NoteSansMedium>
+                        </Link>
+                    </DropDownTitle>
+                    <DropDownItems>
+                        <DropDownItem>
+                            <Link to="/technology">
+                                <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1vw">LLM Pre-training</NoteSansMedium>
+                            </Link>
+                        </DropDownItem>
+                        <DropDownItem>
+                            <Link to="/blockchain">
+                                <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1vw">Blockchain</NoteSansMedium>
+                            </Link>
+                        </DropDownItem>
+                    </DropDownItems>
+                </DropDownMenu>
                 <List>
                     <Link to="/company">
                         <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1vw">Company</NoteSansMedium>
@@ -164,4 +215,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar;
+export default NavbarLayout;

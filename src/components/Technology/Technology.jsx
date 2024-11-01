@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Banner } from "./Banner";
-import { WhyBlockchain } from "./WhyBlockchain";
-import { DataChain } from "./DataChain";
+import { PreTraining } from "./PreTraining";
+import { FineTuning } from "./FineTuning";
 import { Architecture } from "./Architecture";
 
 const TechSection = styled.section`
@@ -14,8 +14,8 @@ const Technology = () => {
     return (
         <TechSection>
             <Banner />
-            <WhyBlockchain />
-            <DataChain />
+            <PreTraining />
+            <FineTuning />
             <Architecture />
         </TechSection>
     )
