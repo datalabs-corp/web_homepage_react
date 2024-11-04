@@ -16,39 +16,35 @@ const items = [
   {
     headTitle: `다음 토큰 예측 (Next Token Prediction)\n또는 자기회귀 언어 모델링`,
     desciption1: "주어진 시퀀스의 다음에 올 토큰을 예측하도록 학습하며 GPT 계열 모델에서 사용",
-    desciption2: `1. 데이터 수집 및 전처리\n
-2. 토큰화(Tokenization)\n
-3. 임베딩(Embedding) 초기화\n
-4. 사전학습 태스크 정의\n
-5. 모델 구조 설계`,
+    desciption2: `1. 그리디 서치(Greedy search)\n
+2. 빔 서치(Beam search)\n
+3. 탑-k 샘플링(Top-k sampling)\n
+4. 템퍼러처 스케일링(Temperature scaling)\n
+5. 탑-p 샘플링(Top-p/Nucleus Sampling)`,
   },
   {
     headTitle: `스팬 예측\n(Span Prediction)`,
     desciption1: "문장의 연속된 여러 토큰을 마스킹하고 이를 한 번에 예측하도록 함",
-    desciption2: `1. 데이터 수집 및 전처리\n
-2. 토큰화(Tokenization)\n
-3. 임베딩(Embedding) 초기화\n
-4. 사전학습 태스크 정의\n
-5. 모델 구조 설계`,
+    desciption2: `1. 스팬(Span)을 마스킹\n
+2. 모델이 마스킹된 부분을 한 번에 예측하도록 학습\n
+3. 주변 문맥을 활용하여 마스킹된 스팬 전체를 예측\n
+4. 단어 수준이 아닌 구(phrase) 또는 절(clause) 수준의 표현을 학습\n`,
   },
   {
     headTitle: "노이즈 제거 자기인코더 (Denoising Autoencoder)",
     desciption1:
       "입력 문장에 노이즈(마스킹, 삭제, 순서 변경 등)를 추가하고, 원본을 복원하도록 학습",
-    desciption2: `1. 데이터 수집 및 전처리\n
-2. 토큰화(Tokenization)\n
-3. 임베딩(Embedding) 초기화\n
-4. 사전학습 태스크 정의\n
-5. 모델 구조 설계`,
+    desciption2: `1. 입력 문장에 마스킹, 단어 삭제, 순서 변경 등의 노이즈를 추가\n
+    2. 원본 문장을 복원하도록 학습`,
   },
   {
     headTitle: "대조 학습 (Contrastive Learning)",
     desciption1: "같은 문장의 다른 버전이나 유사한 문장은 가깝게, 다른 문장은 멀게 표현하도록 학습",
-    desciption2: `1. 데이터 수집 및 전처리\n
-2. 토큰화(Tokenization)\n
-3. 임베딩(Embedding) 초기화\n
-4. 사전학습 태스크 정의\n
-5. 모델 구조 설계`,
+    desciption2: `1. 데이터 샘플 간의 유사성과 차이점을 학습\n
+2. 동일한 문장의 다른 버전이나 유사한 문장(포지티브 쌍)을 생성\n
+3. 원본 문장과 무관한 다른 문장을 네거티브 샘플로 사용\n
+4. 포지티브 쌍의 임베딩 거리를 최소화하고, 네거티브 샘플과의 거리를 최대화\n
+5. 레이블이 없는 대량의 데이터로도 의미 있는 임베딩을 학습`,
   },
 ];
 
