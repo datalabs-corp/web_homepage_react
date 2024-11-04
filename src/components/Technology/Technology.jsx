@@ -6,19 +6,19 @@ import { FineTuning } from "./FineTuning";
 import { Architecture } from "./Architecture";
 
 const TechSection = styled.section`
-    width: 100%;
-`
+  width: 100%;
+`;
 
 const Technology = () => {
-    window.scrollTo(0,0);
-    return (
-        <TechSection>
-            <Banner />
-            <PreTraining />
-            <FineTuning />
-            <Architecture />
-        </TechSection>
-    )
-}
+  window.scrollTo(0, 0);
+  return (
+    <TechSection>
+      <Banner />
+      <PreTraining />
+      <FineTuning />
+      <Architecture />
+    </TechSection>
+  );
+};
 
 export default Technology;
