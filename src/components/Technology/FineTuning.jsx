@@ -79,8 +79,8 @@ const CharItem = styled.div`
   margin: 1rem;
   min-width: 240px;
   min-height: 240px;
-  width: 20vw;
-  height: 240px;
+  width: 30vw;
+  height: 16vw;
   align-items: center;
   justify-content: center;
   border: 2px solid #ddd;
@@ -93,11 +93,11 @@ const Item = ({ headTitle, desciption1 }) => {
     <CharItem>
       <NoteSansMedium
         fontColor={PRIMARY_COLOR}
-        fontSize={"1em"}
+        fontSize={"1.4vw"}
         fontWeight={"bold"}
       >{`${headTitle}`}</NoteSansMedium>
       <div style={{ marginTop: "0rem", textAlign: "center", marginBottom: "1rem" }}>
-        <NoteSansMedium fontColor={GREY_FONT_COLOR} fontSize={"0.8em"}>
+        <NoteSansMedium fontColor={GREY_FONT_COLOR} fontSize={"1.2vw"}>
           {desciption1}
         </NoteSansMedium>
       </div>
