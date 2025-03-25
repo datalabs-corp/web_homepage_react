@@ -57,21 +57,6 @@ const CharItemsContainer = styled.div`
 `;
 
 const CharItem = styled.div`
-  /* position: relative;
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  margin: 1rem;
-  min-width: 13rem;
-  min-height: 13rem;
-  width: 20vw;
-  height: 13rem;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid #ddd;
-  border-radius: 15px;
-  padding: 0px 10px; */
-
   position: relative;
   display: flex;
   flex-direction: column;
