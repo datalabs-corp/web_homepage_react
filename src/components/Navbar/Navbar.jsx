@@ -199,6 +199,26 @@ const NavbarLayout = () => {
                         </DropDownItem>
                     </DropDownItems>
                 </DropDownMenu>
+
+                {/* 여행대로 메뉴 추가 */}
+                <DropDownMenu>
+                    <DropDownTitle>
+                        <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1vw">여행대로</NoteSansMedium>
+                    </DropDownTitle>
+                    <DropDownItems>
+                        <DropDownItem>
+                            <a href="https://dltour.data-labs.co.kr/admin-login" target="_blank" rel="noopener noreferrer">
+                                <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1vw">여행대로 관리자</NoteSansMedium>
+                            </a>
+                        </DropDownItem>
+                        <DropDownItem>
+                            <a href="https://m.blog.naver.com/PostList.naver?blogId=data-labs" target="_blank" rel="noopener noreferrer">
+                                <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1vw">여행대로 블로그</NoteSansMedium>
+                            </a>
+                        </DropDownItem>
+                    </DropDownItems>
+                </DropDownMenu>
+
                 <List>
                     <Link to="/company">
                         <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1vw">Company</NoteSansMedium>
