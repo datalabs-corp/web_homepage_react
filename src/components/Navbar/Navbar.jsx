@@ -212,7 +212,7 @@ const NavbarLayout = () => {
                             </a>
                         </DropDownItem>
                         <DropDownItem>
-                            <a href="https://m.blog.naver.com/PostList.naver?blogId=data-labs" target="_blank" rel="noopener noreferrer">
+                            <a href="https://blog.naver.com/data-labs" target="_blank" rel="noopener noreferrer">
                                 <NoteSansMedium fontColor={WHITE_FONT_COLOR} fontWeight="bold" fontSize="1vw">여행대로 블로그</NoteSansMedium>
                             </a>
                         </DropDownItem>
